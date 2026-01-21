@@ -8,6 +8,7 @@ import MentoringHub from './components/MentoringHub';
 import SuccessStories from './components/SuccessStories';
 import StudentWork from './components/StudentWork';
 import StudentPortfolios from './components/StudentPortfolios';
+import LifeAtProBuild from './components/LifeAtProBuild';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -23,6 +24,7 @@ const App: React.FC = () => {
         <SuccessStories />
         <StudentWork />
         <StudentPortfolios />
+        <LifeAtProBuild />
       </main>
       <Footer />
     </div>
