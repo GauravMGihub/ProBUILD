@@ -11,7 +11,7 @@ const StudentWork: React.FC = () => {
             Student Work
           </h2>
           <p className="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">
-            Check out the incredible projects built by our cohort members during the program.
+            Check out the incredible projects built by our cohort members during the program. You can find the complete code repositories on GitHub which are attached below!.
           </p>
         </div>
 
