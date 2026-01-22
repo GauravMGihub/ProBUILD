@@ -223,7 +223,7 @@ const StudentWork: React.FC = () => {
         
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
             Student Work
           </h2>
           <p className="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">

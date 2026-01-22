@@ -23,7 +23,7 @@ const LifeAtProBuild: React.FC = () => {
         .animate-scroll-culture {
           display: flex;
           width: max-content;
-          animation: scroll 40s linear infinite;
+          animation: scroll 60s linear infinite;
         }
         .animate-scroll-culture:hover {
           animation-play-state: paused;
@@ -32,7 +32,7 @@ const LifeAtProBuild: React.FC = () => {
 
       {/* Section Heading */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
           Life at ProBUILD
         </h2>
         <p className="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">
@@ -47,7 +47,7 @@ const LifeAtProBuild: React.FC = () => {
           {[...cultureImages, ...cultureImages].map((img, index) => (
             <div 
               key={index} 
-              className="w-80 h-64 mx-3 flex-shrink-0 rounded-2xl overflow-hidden relative group"
+              className="w-[500px] h-[350px] mx-3 flex-shrink-0 rounded-2xl overflow-hidden relative group"
             >
               {/* Dark Overlay that disappears on hover */}
               <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300 z-10" />
@@ -61,7 +61,11 @@ const LifeAtProBuild: React.FC = () => {
           ))}
         </div>
       </div>
-
+     
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+        <div className="w-full h-px bg-slate-200"></div>
+      </div>
+      
     </section>
   );
 };

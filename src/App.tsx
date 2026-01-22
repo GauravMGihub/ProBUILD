@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import LifeAtProBuild from './components/LifeAtProBuild';
 import Philosophy from './components/Philosophy';
 import Roadmap from './components/Roadmap';
 import ProgramShowcase from './components/ProgramShowcase';
@@ -9,7 +10,6 @@ import SuccessStories from './components/SuccessStories';
 import StudentWork from './components/StudentWork';
 import StudentPortfolios from './components/StudentPortfolios';
 import Mentors from './components/Mentors';
-import LifeAtProBuild from './components/LifeAtProBuild';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -18,6 +18,7 @@ const App: React.FC = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
+        <LifeAtProBuild />
         <Philosophy />
         <Roadmap />
         <ProgramShowcase />
@@ -26,7 +27,6 @@ const App: React.FC = () => {
         <StudentWork />
         <StudentPortfolios />
         <Mentors />
-        <LifeAtProBuild />
       </main>
       <Footer />
     </div>
