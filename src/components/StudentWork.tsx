@@ -130,41 +130,55 @@
 
 // export default StudentWork;
 
-import React, { useState, Suspense } from 'react';
+import React, { useState, Suspense, useEffect } from 'react';
 import { Github, ArrowRight, Play, Box } from 'lucide-react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Stage } from '@react-three/drei';
+import { OrbitControls, Stage , useGLTF} from '@react-three/drei';
 
 // --- HELPER: 3D MODEL COMPONENT ---
-// (Replace the shapes below with <useGLTF url="..." /> when you have real files)
-const PlaceholderModel = ({ type }: { type: string }) => {
-  return (
-    <mesh>
-      {type === 'gearbox' ? (
-        <torusKnotGeometry args={[1, 0.35, 128, 32]} /> // Looks like a complex part
-      ) : (
-        <boxGeometry args={[1.5, 1.5, 1.5]} /> // Looks like a factory unit
-      )}
-      <meshStandardMaterial color="#94a3b8" roughness={0.2} metalness={0.8} />
-    </mesh>
-  );
+const RealModel = ({ filePath }: { filePath: string }) => {
+  // 2. Load the file
+  const { scene } = useGLTF(filePath);
+  
+  // 3. Render it
+  // scale={0.01} is important! CAD files are in mm, WebGL is in meters.
+  // If the model is huge, make this number smaller (e.g., 0.001).
+  // If it's tiny, make it 1 or 10.
+  
+    // We traverse (loop through) every part of the model and force it to look like metal.
+  useEffect(() => {
+    scene.traverse((child: any) => {
+      if (child.isMesh) {
+        // A. Make it look like Steel/Chrome
+        child.material.metalness = 0.8; // 1 is fully metallic, 0 is plastic
+        child.material.roughness = 0.2; // 0 is mirror-smooth, 1 is rough concrete
+        
+        // B. (Optional) Force a color if the original is too dark/light
+        // child.material.color.set('#d1d5db'); // Light Grey Steel color
+        
+        // C. Enable Shadows
+        child.castShadow = true;
+        child.receiveShadow = true;
+      }
+    });
+  }, [scene]);
+  return <primitive object={scene} scale={0.01} />;
 };
 
+
 // --- NEW COMPONENT: THE MEDIA SWITCHER CARD ---
-const ProjectMediaCard = ({ videoSrc, modelType }: { videoSrc: string, modelType: string }) => {
+const ProjectMediaCard = ({ videoSrc, modelPath }: { videoSrc: string, modelPath: string }) => {
   const [activeTab, setActiveTab] = useState<'video' | '3d'>('video');
 
   return (
     <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200 aspect-video bg-slate-900 group">
       
-      {/* 1. THE TOGGLE SWITCH (Floating at top) */}
+      {/* Toggle Buttons */}
       <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 bg-slate-900/80 backdrop-blur-md p-1 rounded-full border border-slate-700 flex shadow-lg">
         <button
           onClick={() => setActiveTab('video')}
           className={`flex items-center px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-300 ${
-            activeTab === 'video' 
-            ? 'bg-blue-600 text-white shadow-md' 
-            : 'text-slate-400 hover:text-white'
+            activeTab === 'video' ? 'bg-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-white'
           }`}
         >
           <Play className="w-3 h-3 mr-2" />
@@ -173,9 +187,7 @@ const ProjectMediaCard = ({ videoSrc, modelType }: { videoSrc: string, modelType
         <button
           onClick={() => setActiveTab('3d')}
           className={`flex items-center px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-300 ${
-            activeTab === '3d' 
-            ? 'bg-blue-600 text-white shadow-md' 
-            : 'text-slate-400 hover:text-white'
+            activeTab === '3d' ? 'bg-blue-600 text-white shadow-md' : 'text-slate-400 hover:text-white'
           }`}
         >
           <Box className="w-3 h-3 mr-2" />
@@ -183,30 +195,25 @@ const ProjectMediaCard = ({ videoSrc, modelType }: { videoSrc: string, modelType
         </button>
       </div>
 
-      {/* 2. THE CONTENT */}
+      {/* Content */}
       {activeTab === 'video' ? (
-        // VIDEO MODE
         <video 
           className="w-full h-full object-cover"
-          controls 
-          muted 
-          loop
-          src={videoSrc} 
-        >
-          Your browser does not support the video tag.
-        </video>
+          controls muted loop src={videoSrc} 
+        />
       ) : (
-        // 3D MODE
         <div className="w-full h-full cursor-move bg-slate-800">
            <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
             <Suspense fallback={null}>
-              <Stage environment="city" intensity={0.5}>
-                <PlaceholderModel type={modelType} />
+              <Stage environment="warehouse" intensity={0.7} adjustCamera shadows={false}>
+                
+                {/* FIX: Pass the modelPath prop correctly */}
+                <RealModel filePath={modelPath} />
+
               </Stage>
               <OrbitControls autoRotate autoRotateSpeed={4} />
             </Suspense>
           </Canvas>
-          {/* Hint Overlay */}
           <div className="absolute bottom-4 right-4 text-[10px] text-slate-500 uppercase tracking-widest font-bold pointer-events-none select-none">
             Drag to Rotate
           </div>
@@ -237,7 +244,8 @@ const StudentWork: React.FC = () => {
           {/* MEDIA CARD (Left) */}
           <ProjectMediaCard 
             videoSrc="/probuild/videos/project1.mp4" 
-            modelType="gearbox" 
+            modelPath="/probuild/models/DG_RearCover_Rehan-Body_coloured.gltf"
+           
           />
 
           {/* TEXT (Right) */}
@@ -314,8 +322,8 @@ const StudentWork: React.FC = () => {
           {/* MEDIA CARD (Right) */}
           <div className="order-1 lg:order-2">
             <ProjectMediaCard 
-              videoSrc="/probuild/videos/project2.mp4" 
-              modelType="factory" 
+              videoSrc="/probuild/videos/project2.mp4"  
+              modelPath="/probuild/models/DG_RearCover_Rehan-Body.gltf" 
             />
           </div>
 
