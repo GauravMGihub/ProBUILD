@@ -36,7 +36,7 @@ const ProgramShowcase: React.FC = () => {
                 Featured Program
               </div>
               <h3 className="text-3xl font-bold text-slate-900 mb-4">
-                FreeCAD Foundation <span className="text-blue-600">Nano Degree</span>
+                FreeCAD <span className="text-yellow-500">Foundation</span> <span className="text-blue-600">Nano Degree</span>
               </h3>
               <p className="text-slate-500 mb-6 leading-relaxed">
                 Master open-source parametric modeling. This course creates the bedrock for Diploma Level I. Built for students who want to move beyond theory.
@@ -130,7 +130,7 @@ const ProgramShowcase: React.FC = () => {
                 Advanced Program
               </div>
               <h3 className="text-3xl font-bold text-slate-900 mb-4">
-                FreeCAD Intermediate <span className="text-blue-600">Nano Degree</span>
+                FreeCAD <span className="text-orange-500">Intermediate</span> <span className="text-blue-600">Nano Degree</span>
               </h3>
               <p className="text-slate-500 mb-6 leading-relaxed">
                 Take your skills to the professional level. Focus on complex assembly simulations, FEA analysis, and Python scripting for automation.
