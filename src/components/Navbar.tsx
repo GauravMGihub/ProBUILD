@@ -14,11 +14,11 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Philosophy', href: '#philosophy' },
+    { name: 'Home', href: '#philosophy' },
     { name: 'Our Roadmap', href: '#roadmap' },
-    { name: 'Cohort 2026', href: '#program' },
-    { name: 'Student Work', href: '#stories' },
-    { name: 'Mentorship', href: '#mentoring' },
+    { name: 'CAD Pathway', href: '#program' },
+    { name: 'About Us', href: '#stories' },
+    { name: 'Contact Us', href: '#mentoring' },
   ];
 
   return (

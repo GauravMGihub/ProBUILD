@@ -178,7 +178,7 @@ const Philosophy: React.FC = () => {
 
                 {/* Text Content */}
                 <div>
-                   <h4 className="text-3xl font-bold text-slate-900 mb-4">Internship Assurance</h4>
+                   <h4 className="text-3xl font-bold text-slate-900 mb-4">Internship </h4>
                    <p className="text-lg text-slate-600 leading-relaxed">
                      We don't just teach; we connect. Top performers get guaranteed interview opportunities with our hiring partners in the Automotive and Automation sectors.
                    </p>
