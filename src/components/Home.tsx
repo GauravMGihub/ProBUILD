@@ -3,11 +3,7 @@ import Hero from './Hero';
 import LifeAtProBuild from './LifeAtProBuild';
 import Philosophy from './Philosophy';
 import Roadmap from './Roadmap';
-import ProgramShowcase from './ProgramShowcase';
-import MentoringHub from './MentoringHub';
 import SuccessStories from './SuccessStories';
-import StudentWork from './StudentWork';
-import StudentPortfolios from './StudentPortfolios';
 import Mentors from './Mentors';
 
 const Home: React.FC = () => {
@@ -17,11 +13,7 @@ const Home: React.FC = () => {
       <LifeAtProBuild />
       <Philosophy />
       <Roadmap />
-      <ProgramShowcase />
-      <MentoringHub />
       <SuccessStories />
-      <StudentWork />
-      <StudentPortfolios />
       <Mentors />
     </>
   );

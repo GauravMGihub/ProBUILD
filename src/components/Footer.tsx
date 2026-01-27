@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
                 <div className="w-1.5 h-2 bg-brand-yellow rounded-sm"></div>
                 <div className="w-1.5 h-4 bg-brand-red rounded-sm"></div>
                 <div className="w-1.5 h-6 bg-brand-blue rounded-sm"></div>
-                <span className="font-extrabold text-xl tracking-tight text-slate-900 ml-1">
+                <span className="font-extrabold text-3xl md:text-4xl tracking-tight text-slate-900 ml-1">
                   ProBUILD
                 </span>
              </div>

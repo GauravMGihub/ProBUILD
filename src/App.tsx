@@ -42,19 +42,19 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // 1. Import Global Components (Always visible)
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 // 2. Import Page Components (Swapped based on URL)
 import Home from './components/Home';
-import AboutUs from './components/AboutUs';       // Ensure you created this file
-import CadPathway from './components/CadPathway'; // Ensure you created this file
+import AboutUs from './components/AboutUs';       
+import CadPathway from './components/CadPathway'; 
 
 const App: React.FC = () => {
   return (
     // The Router wraps the whole application
     <Router  basename="/probuild">
       <div className="min-h-screen flex flex-col w-full overflow-x-hidden">
-        
-        {/* Navbar stays at the top of every page */}
+    
         <Navbar />
         
         <main className="flex-grow">
@@ -71,8 +71,8 @@ const App: React.FC = () => {
           </Routes>
         </main>
 
-        {/* Footer stays at the bottom of every page */}
         <Footer />
+        <ScrollToTopButton />
         
       </div>
     </Router>
