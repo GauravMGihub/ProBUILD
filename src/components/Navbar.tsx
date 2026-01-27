@@ -263,7 +263,7 @@ const Navbar: React.FC = () => {
               About Us
             </button>
 
-            <button onClick={() => handleNavigation('/', 'contact')} className="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">
+            <button onClick={() => handleNavigation('/contact')} className="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">
               Contact Us
             </button>
 

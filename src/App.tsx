@@ -48,6 +48,7 @@ import ScrollToTopButton from './components/ScrollToTopButton';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';       
 import CadPathway from './components/CadPathway'; 
+import ContactUs from './components/ContactUs';
 
 const App: React.FC = () => {
   return (
@@ -68,6 +69,8 @@ const App: React.FC = () => {
             
             {/* If URL is "/cad-pathway", show CadPathway */}
             <Route path="/cad-pathway" element={<CadPathway />} />
+
+            <Route path="/contact" element={<ContactUs />} /> 
           </Routes>
         </main>
 
