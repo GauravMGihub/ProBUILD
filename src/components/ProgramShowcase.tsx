@@ -89,7 +89,7 @@ const ProgramShowcase: React.FC = () => {
               {/* Buttons */}
               <div className="mt-auto grid grid-cols-2 gap-4">
               <a 
-              href="brochures/Foundations.pdf" 
+              href="probuild/brochures/Foundations.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center px-4 py-3 border border-slate-200 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-colors cursor-pointer"
@@ -182,7 +182,7 @@ const ProgramShowcase: React.FC = () => {
               {/* Buttons */}
               <div className="mt-auto grid grid-cols-2 gap-4">
                 <a 
-              href="brochures/Foundations.pdf" 
+              href="probuild/brochures/Foundations.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center px-4 py-3 border border-slate-200 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-colors cursor-pointer"
