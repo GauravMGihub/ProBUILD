@@ -3,29 +3,29 @@ import { Building2, Quote } from 'lucide-react'; // Changed Briefcase to Quote
 
 const students = [
   {
-    name: "Alex M.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-    companyName: "Tesla",
-    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png",
+    name: "Rehan Nadaf",
+    image: "/probuild/images/students/Rehan_Nadaf.png",
+    // companyName: "Tesla",
+    // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png",
     role: "CAD Design Intern",
     description: "Designed parametric battery casing components using CATIA. Reduced tolerance errors by 15%."
   },
   {
-    name: "Sarah K.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-    companyName: "Siemens",
-    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg",
+    name: "Anish Patil",
+    image: "/probuild/images/students/Anish_Patil.png",
+    // companyName: "Siemens",
+    // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg",
     role: "Digital Twin Analyst",
     description: "Built a functional digital twin of the assembly line to predict maintenance cycles using Python."
   },
-  {
-    name: "Rahul P.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-    companyName: "Tata Motors",
-    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg",
-    role: "Automation Engineer",
-    description: "Automated the chassis stress-testing workflow, cutting simulation time from 2 days to 4 hours."
-  }
+  // {
+  //   name: "Rahul P.",
+  //   image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  //   // companyName: "Tata Motors",
+  //   // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg",
+  //   role: "Automation Engineer",
+  //   description: "Automated the chassis stress-testing workflow, cutting simulation time from 2 days to 4 hours."
+  // }
 ];
 
 const SuccessStories: React.FC = () => {
@@ -42,7 +42,7 @@ const SuccessStories: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
           
           {students.map((student, index) => (
             <div 
@@ -65,7 +65,7 @@ const SuccessStories: React.FC = () => {
                 {student.name}
               </h3>
               
-              {/* Company Logo Box */}
+              {/* Company Logo Box
               <div className="my-5 bg-slate-50 border border-slate-200 px-6 py-3 rounded-lg flex items-center justify-center min-w-[140px]">
                 {student.companyLogo ? (
                    <img src={student.companyLogo} alt={student.companyName} className="h-6 object-contain opacity-80" />
@@ -75,7 +75,7 @@ const SuccessStories: React.FC = () => {
                       {student.companyName}
                    </div>
                 )}
-              </div>
+              </div> */}
 
               {/* Position */}
               <div className="text-blue-600 font-bold uppercase tracking-wide text-sm mb-6">

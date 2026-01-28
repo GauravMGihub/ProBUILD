@@ -7,17 +7,17 @@ const mentors = [
     role: "Associate CAD Mentor",
     company: "ProBUILD",
     bio: "Tutoring engineering students for FreeCAD and its parameterization capabilities.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+    image: "/probuild/images/mentors/Pranoti_Kulkarni.png",
     linkedin: "https://www.linkedin.com/in/pranoti-kulkarni-50533729a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
-  {
-    name: "Emily Zhang",
-    role: "Automation & Robotics Lead",
-    company: "Siemens R&D",
-    bio: "Specializes in Python-based industrial automation. Expert in creating digital twins for large-scale assembly lines.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-    linkedin: "#"
-  }
+  // {
+  //   name: "Emily Zhang",
+  //   role: "Automation & Robotics Lead",
+  //   company: "Siemens R&D",
+  //   bio: "Specializes in Python-based industrial automation. Expert in creating digital twins for large-scale assembly lines.",
+  //   image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+  //   linkedin: "#"
+  // }
 ];
 
 const Mentors: React.FC = () => {
@@ -37,7 +37,7 @@ const Mentors: React.FC = () => {
         </div>
 
         {/* 2-COLUMN GRID (Side by Side) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        <div className=" flex justify-center w-full grid-cols-1 gap-10 max-w-5xl mx-auto">
           
           {mentors.map((mentor, index) => (
             <div

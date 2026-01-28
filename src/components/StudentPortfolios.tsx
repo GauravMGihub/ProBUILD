@@ -120,22 +120,22 @@ import { Github, FolderGit2, Linkedin } from 'lucide-react'; // Added Linkedin I
 // 1. ADDED LINKEDIN LINKS TO DATA
 const portfolioData = [
   {
-    student: "Alex M.",
+    student: "Rehan Nadaf",
     role: "Mechanical Design Intern",
     project: "Gearbox Stress Analysis",
     description: "A complete repository containing the FreeCAD files, Python automation scripts, and FEA simulation results.",
     link: "#",
-    linkedin: "#", // Add real link here
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+    linkedin: "https://www.linkedin.com/in/rehan-nadaf?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", // Add real link here
+    image: "/probuild/images/students/Rehan_Nadaf.png"
   },
   {
-    student: "Sarah K.",
+    student: "Anish Patil",
     role: "Digital Twin Analyst",
     project: "IoT Assembly Line",
     description: "Source code for the digital twin dashboard, including the MQTT broker setup and real-time visualization components.",
     link: "#",
-    linkedin: "#",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+    linkedin: "https://www.linkedin.com/in/anish-patil-kodarkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    image: "/probuild/images/students/Anish_Patil.png"
   },
   {
     student: "Rahul P.",
