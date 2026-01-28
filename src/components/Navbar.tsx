@@ -271,7 +271,9 @@ const Navbar: React.FC = () => {
 
           {/* 4. CTA BUTTON (Right Side) */}
           <div className="hidden md:flex items-center pl-4">
-            <button className="group px-5 py-2 rounded-full bg-brand-red text-white font-semibold text-sm shadow-lg shadow-brand-red/30 hover:shadow-brand-red/50 hover:scale-105 transition-all duration-300 flex items-center gap-2">
+            <button
+              onClick={() => handleNavigation('/contact')}
+              className="group px-5 py-2 rounded-full bg-brand-red text-white font-semibold text-sm shadow-lg shadow-brand-red/30 hover:shadow-brand-red/50 hover:scale-105 transition-all duration-300 flex items-center gap-2">
               Apply Cohort '26
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>

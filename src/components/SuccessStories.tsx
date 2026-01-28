@@ -4,7 +4,7 @@ import { Building2, Quote } from 'lucide-react'; // Changed Briefcase to Quote
 const students = [
   {
     name: "Alex M.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
     companyName: "Tesla",
     companyLogo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png",
     role: "CAD Design Intern",
@@ -12,7 +12,7 @@ const students = [
   },
   {
     name: "Sarah K.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
     companyName: "Siemens",
     companyLogo: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg",
     role: "Digital Twin Analyst",
@@ -20,7 +20,7 @@ const students = [
   },
   {
     name: "Rahul P.",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
     companyName: "Tata Motors",
     companyLogo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg",
     role: "Automation Engineer",

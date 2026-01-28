@@ -63,7 +63,7 @@ const ContactUs: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-blue-100 text-sm font-medium mb-1">Email Us</p>
-                    <a href="mailto:hello@probuild.edu" className="text-lg font-bold hover:text-blue-200 transition-colors">hello@probuild.edu</a>
+                    <a href="probuild.vet@gmail.com" className="text-lg font-bold hover:text-blue-200 transition-colors">probuild.vet@gmail.com</a>
                   </div>
                 </div>
 
@@ -73,7 +73,7 @@ const ContactUs: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-blue-100 text-sm font-medium mb-1">Call Us</p>
-                    <p className="text-lg font-bold">+1 (555) 123-4567</p>
+                    <p className="text-lg font-bold">+91 9822959007</p>
                   </div>
                 </div>
 

@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
                 <div className="w-1.5 h-2 bg-brand-yellow rounded-sm"></div>
                 <div className="w-1.5 h-4 bg-brand-red rounded-sm"></div>
                 <div className="w-1.5 h-6 bg-brand-blue rounded-sm"></div>
-                <span className="font-extrabold text-3xl md:text-4xl tracking-tight text-slate-900 ml-1">
+                <span className="font-extrabold text-xl tracking-tight text-slate-900 ml-1">
                   ProBUILD
                 </span>
              </div>
@@ -123,13 +123,13 @@ const Footer: React.FC = () => {
               <a href="https://www.linkedin.com/company/probuildglobal/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-blue hover:text-white transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-pink-600 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/probuild.in?igsh=YnN4cHdyODBuNzc2" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-pink-600 hover:text-white transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-blue-400 hover:text-white transition-colors">
-                <Twitter size={18} />
-              </a>
-              <a href="mailto:hello@probuild.edu" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-red hover:text-white transition-colors">
+              
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=probuild.vet@gmail.com"
+                target="_blank"
+                 rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-red hover:text-white transition-colors">
                 <Mail size={18} />
               </a>
             </div>

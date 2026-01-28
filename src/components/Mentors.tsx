@@ -3,19 +3,19 @@ import { Linkedin, Briefcase } from 'lucide-react';
 
 const mentors = [
   {
-    name: "Dr. Robert Fox",
-    role: "Senior Product Design Engineer",
-    company: "Ex-Ford & Tesla",
-    bio: "15+ years of experience in automotive chassis design. Led the structural analysis team for the Model 3 battery pack.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80",
-    linkedin: "#"
+    name: "Pranoti Kulkarni",
+    role: "Associate CAD Mentor",
+    company: "ProBUILD",
+    bio: "Tutoring engineering students for FreeCAD and its parameterization capabilities.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
+    linkedin: "https://www.linkedin.com/in/pranoti-kulkarni-50533729a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
     name: "Emily Zhang",
     role: "Automation & Robotics Lead",
     company: "Siemens R&D",
     bio: "Specializes in Python-based industrial automation. Expert in creating digital twins for large-scale assembly lines.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
     linkedin: "#"
   }
 ];

@@ -5,7 +5,7 @@ import StatsBar from './StatsBar';
 import Philosophy from './Philosophy';
 import Roadmap from './Roadmap';
 import SuccessStories from './SuccessStories';
-import Mentors from './Mentors';
+
 
 
 const Home: React.FC = () => {
@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       <Philosophy />
       <Roadmap />
       <SuccessStories />
-      <Mentors />
+      
       
     </>
   );
