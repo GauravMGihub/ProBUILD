@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+    background-color: #fbf4e7;
+    /* or theme('colors.brand.cream') */
+}

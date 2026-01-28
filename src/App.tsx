@@ -47,14 +47,15 @@ import ScrollToTopButton from './components/ScrollToTopButton';
 // 2. Import Page Components (Swapped based on URL)
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';       
-import CadPathway from './components/CadPathway'; 
+import Pathway from './components/Pathway'; 
 import ContactUs from './components/ContactUs';
+
 
 const App: React.FC = () => {
   return (
     // The Router wraps the whole application
     <Router  basename="/probuild">
-      <div className="min-h-screen flex flex-col w-full overflow-x-hidden">
+      <div className="min-h-screen flex flex-col w-full overflow-x-hidden bg-brand-cream text-slate-900">
     
         <Navbar />
         
@@ -66,9 +67,9 @@ const App: React.FC = () => {
             
             {/* If URL is "/about", show AboutUs */}
             <Route path="/about" element={<AboutUs />} />
-            
-            {/* If URL is "/cad-pathway", show CadPathway */}
-            <Route path="/cad-pathway" element={<CadPathway />} />
+
+            {/* If URL is "/pathway", show Pathway */}
+            <Route path="/cad-pathway" element={<Pathway />} />
 
             <Route path="/contact" element={<ContactUs />} /> 
           </Routes>

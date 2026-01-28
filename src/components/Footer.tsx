@@ -84,11 +84,13 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           
           <div className="col-span-1 md:col-span-1">
-             <div className="flex items-end gap-1 h-6 mb-4">
-                <div className="w-1.5 h-2 bg-brand-yellow rounded-sm"></div>
-                <div className="w-1.5 h-4 bg-brand-red rounded-sm"></div>
-                <div className="w-1.5 h-6 bg-brand-blue rounded-sm"></div>
-                <span className="font-extrabold text-xl tracking-tight text-slate-900 ml-1">
+             <div className="flex items-center gap-1 h-6 mb-4">
+                <img 
+         src="/probuild/images/logos/ProBUILD2.png" 
+         alt="ProBUILD Logo" 
+         className="h-6 w-auto object-contain" // Slightly smaller for footer
+      />
+                <span className="font-extrabold text-2xl tracking-tight text-slate-900 ml-1">
                   ProBUILD
                 </span>
              </div>

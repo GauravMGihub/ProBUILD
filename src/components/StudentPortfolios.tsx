@@ -138,7 +138,7 @@ const portfolioData = [
     image: "/probuild/images/students/Anish_Patil.png"
   },
   {
-    student: "Rahul P.",
+    student: "Krishna Manvatkar",
     role: "Automation Engineer",
     project: "Parametric Drone Frame",
     description: "Python macros for generating variable-size drone frames automatically based on payload weight inputs.",

@@ -202,13 +202,13 @@ const Navbar: React.FC = () => {
   const Logo = () => (
     <div 
       onClick={() => handleNavigation('/')} 
-      className="flex-shrink-0 flex items-center gap-2 cursor-pointer"
+      className="flex-shrink-0 flex items-center gap-3 cursor-pointer"
     >
-       <div className="flex items-end gap-1 h-8">
-          <div className="w-2 h-3 bg-brand-yellow rounded-sm"></div>
-          <div className="w-2 h-5 bg-brand-red rounded-sm"></div>
-          <div className="w-2 h-8 bg-brand-blue rounded-sm"></div>
-       </div>
+       <img 
+         src="/probuild/images/logos/ProBUILD2.png" 
+         alt="ProBUILD Logo" 
+         className="h-8 w-auto object-contain" 
+       />
        <span className="font-extrabold text-3xl md:text-4xl tracking-tight text-slate-900 ml-1">ProBUILD</span>
     </div>
   );

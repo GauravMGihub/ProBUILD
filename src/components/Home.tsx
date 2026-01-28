@@ -4,6 +4,8 @@ import LifeAtProBuild from './LifeAtProBuild';
 import StatsBar from './StatsBar';
 import Philosophy from './Philosophy';
 import Roadmap from './Roadmap';
+import PathwaysPreview from './PathwaysPreview';
+import QuickMentoring from './QuickMentoring';
 import SuccessStories from './SuccessStories';
 
 
@@ -16,6 +18,8 @@ const Home: React.FC = () => {
       <StatsBar />
       <Philosophy />
       <Roadmap />
+      <PathwaysPreview />
+      <QuickMentoring />
       <SuccessStories />
       
       
