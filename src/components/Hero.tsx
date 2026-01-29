@@ -133,9 +133,9 @@ const Hero: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
               New Cohort Starting Fall 2026
             </div>
-            
+
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
-              Build your <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-cyan-500">Profile</span>, <br className="hidden lg:block"/>
+              Build your <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-cyan-500">Profile</span>,<br className="hidden lg:block"/>
               not just a Resume.
             </h1>
             

@@ -42,6 +42,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // 1. Import Global Components (Always visible)
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTopButton from './components/ScrollToTopButton';
 
 // 2. Import Page Components (Swapped based on URL)
@@ -55,7 +56,7 @@ const App: React.FC = () => {
   return (
     // The Router wraps the whole application
     <Router  basename="/probuild">
-      <div className="min-h-screen flex flex-col w-full overflow-x-hidden">
+      <div className="min-h-screen flex flex-col w-full overflow-x-hidden pt-20">
     
         <Navbar />
         
@@ -76,6 +77,7 @@ const App: React.FC = () => {
         </main>
 
         <Footer />
+        <WhatsAppButton /> 
         <ScrollToTopButton />
         
       </div>

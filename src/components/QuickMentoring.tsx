@@ -24,7 +24,7 @@ const QuickMentoring: React.FC = () => {
           <HelpCircle className="w-8 h-8 text-blue-600" />
         </div>
 
-        <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+        <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-4">
           Not sure where to start?
         </h2>
         <p className="text-lg text-slate-500 mb-10">

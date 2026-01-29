@@ -28,7 +28,7 @@ const Mentors: React.FC = () => {
         
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white text-slate-900 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold text-white text-slate-900 tracking-tight">
             Know Your Mentors
           </h2>
           <p className="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">

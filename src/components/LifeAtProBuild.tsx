@@ -32,7 +32,7 @@ const LifeAtProBuild: React.FC = () => {
 
       {/* Section Heading */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">
           Life at ProBUILD
         </h2>
         <p className="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">

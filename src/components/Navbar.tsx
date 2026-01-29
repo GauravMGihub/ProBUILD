@@ -209,14 +209,12 @@ const Navbar: React.FC = () => {
          alt="ProBUILD Logo" 
          className="h-8 w-auto object-contain" 
        />
-       <span className="font-extrabold text-3xl md:text-4xl tracking-tight text-slate-900 ml-1">ProBUILD</span>
+       <span className="font-semibold text-4xl md:text-4xl tracking-tight text-slate-900 ml-1">ProBUILD</span>
     </div>
   );
 
   return (
-    <nav className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-      isScrolled ? 'bg-brand-cream/90 backdrop-blur-md shadow-sm border-b border-gray-100' : 'bg-brand-cream py-4'
-    }`}>
+   <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-brand-cream/80 backdrop-blur-md border-b border-white/20 shadow-sm transition-all duration-300 py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           

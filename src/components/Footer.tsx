@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
          alt="ProBUILD Logo" 
          className="h-6 w-auto object-contain" // Slightly smaller for footer
       />
-                <span className="font-extrabold text-2xl tracking-tight text-slate-900 ml-1">
+                <span className="font-semibold text-3xl tracking-tight text-slate-900 ml-1">
                   ProBUILD
                 </span>
              </div>

@@ -84,7 +84,7 @@ const ContactUs: React.FC = () => {
                   <div>
                     <p className="text-blue-100 text-sm font-medium mb-1">Visit Us</p>
                     <p className="text-lg font-bold leading-tight">
-                      123 Innovation Drive,<br/> Tech Valley, CA 94043
+                      8, Ashaniketan lane No.11,<br/>Krishna Colony,<br/>Kothrud, Pune - 411038,<br/> India
                     </p>
                   </div>
                 </div>

@@ -18,14 +18,14 @@ const students = [
     role: "Digital Twin Analyst",
     description: "Built a functional digital twin of the assembly line to predict maintenance cycles using Python."
   },
-  // {
-  //   name: "Rahul P.",
-  //   image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-  //   // companyName: "Tata Motors",
-  //   // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg",
-  //   role: "Automation Engineer",
-  //   description: "Automated the chassis stress-testing workflow, cutting simulation time from 2 days to 4 hours."
-  // }
+  {
+    name: "Pranoti Kulkarni",
+    image: "/probuild/images/mentors/Pranoti_Kulkarni.png",
+    // companyName: "Tata Motors",
+    // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg",
+    role: "Automation Engineer",
+    description: "Automated the chassis stress-testing workflow, cutting simulation time from 2 days to 4 hours."
+  }
 ];
 
 const SuccessStories: React.FC = () => {
@@ -34,7 +34,7 @@ const SuccessStories: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">
             Success of Cohort 2025
           </h2>
           <p className="mt-4 text-lg text-slate-500">
@@ -42,7 +42,7 @@ const SuccessStories: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
           
           {students.map((student, index) => (
             <div 
