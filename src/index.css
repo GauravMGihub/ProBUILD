@@ -1,6 +1,11 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-    background-color: #fbf4e7;
-    /* or theme('colors.brand.cream') */
+@layer base {
+    body {
+        background-color: #fbf4e7;
+        color: #0f172a;
+        /* or theme('colors.brand.cream') */
+    }
 }

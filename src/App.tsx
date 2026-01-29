@@ -55,7 +55,7 @@ const App: React.FC = () => {
   return (
     // The Router wraps the whole application
     <Router  basename="/probuild">
-      <div className="min-h-screen flex flex-col w-full overflow-x-hidden bg-brand-cream text-slate-900">
+      <div className="min-h-screen flex flex-col w-full overflow-x-hidden">
     
         <Navbar />
         

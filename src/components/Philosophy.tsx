@@ -85,10 +85,10 @@ import { Briefcase, Github, GraduationCap, ArrowUpRight, Handshake } from 'lucid
 
 const Philosophy: React.FC = () => {
   return (
-    <section id="philosophy" className="py-20 bg-white">
+    <section id="philosophy" className="py-20 bg-brand-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-brand-blue font-bold tracking-wide uppercase text-sm mb-3">Our Philosophy</h2>
+          <h2 className="text-brand-azure font-bold tracking-wide uppercase text-sm mb-3">Our Philosophy</h2>
           <h3 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Why ProBUILD works.</h3>
         </div>
 
@@ -96,7 +96,7 @@ const Philosophy: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(250px,auto)]">
           
           {/* Box 1: Large - Real World Projects (Unchanged) */}
-          <div className="md:col-span-2 bg-slate-50 rounded-3xl p-8 md:p-12 relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border border-gray-100">
+          <div className="md:col-span-2 bg-brand-cream rounded-3xl p-8 md:p-12 relative overflow-hidden group hover:shadow-2xl transition-all duration-300 border border-gray-100">
             <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
               <Briefcase size={180} />
             </div>
@@ -119,7 +119,7 @@ const Philosophy: React.FC = () => {
           </div>
 
           {/* Box 2: Tall/Medium - Portfolio Driven (Unchanged) */}
-          <div className="bg-brand-blue rounded-3xl p-8 md:p-12 relative overflow-hidden group hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300 text-white">
+          <div className="bg-brand-azure rounded-3xl p-8 md:p-12 relative overflow-hidden group hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300 text-white">
              <div className="absolute -bottom-10 -right-10 opacity-20 group-hover:scale-110 transition-transform duration-500">
               <Github size={200} />
             </div>

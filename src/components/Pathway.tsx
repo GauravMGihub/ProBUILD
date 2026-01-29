@@ -73,7 +73,7 @@ const CadPathway: React.FC = () => {
   }, [location]); // Re-run whenever the URL changes
 
   return (
-    <div className="pt-24 bg-white min-h-screen">
+    <div className="pt-24 bg-brand-cream min-h-screen">
       
       {/* --- PAGE HEADER --- */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
@@ -95,7 +95,7 @@ const CadPathway: React.FC = () => {
             onClick={() => setActivePathway('engineering')}
             className={`flex-1 flex items-center justify-center py-4 px-6 rounded-xl text-sm font-bold uppercase tracking-wide transition-all duration-300 ${
               activePathway === 'engineering'
-                ? 'bg-white text-blue-600 shadow-lg scale-100'
+                ? 'bg-white text-brand-azure shadow-lg scale-100'
                 : 'text-slate-500 hover:text-slate-700 hover:bg-slate-200'
             }`}
           >
@@ -108,7 +108,7 @@ const CadPathway: React.FC = () => {
             onClick={() => setActivePathway('design')}
             className={`flex-1 flex items-center justify-center py-4 px-6 rounded-xl text-sm font-bold uppercase tracking-wide transition-all duration-300 ${
               activePathway === 'design'
-                ? 'bg-white text-purple-600 shadow-lg scale-100'
+                ? 'bg-white text-brand-red shadow-lg scale-100'
                 : 'text-slate-500 hover:text-slate-700 hover:bg-slate-200'
             }`}
           >
@@ -121,7 +121,7 @@ const CadPathway: React.FC = () => {
             onClick={() => setActivePathway('business')}
             className={`flex-1 flex items-center justify-center py-4 px-6 rounded-xl text-sm font-bold uppercase tracking-wide transition-all duration-300 ${
               activePathway === 'business'
-                ? 'bg-white text-green-600 shadow-lg scale-100'
+                ? 'bg-white text-brand-yellow shadow-lg scale-100'
                 : 'text-slate-500 hover:text-slate-700 hover:bg-slate-200'
             }`}
           >
@@ -139,7 +139,7 @@ const CadPathway: React.FC = () => {
         <div className="animate-fade-in-up">
           {/* Sub-header for context */}
           <div className="text-center mb-10">
-            <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-bold uppercase">
+            <span className="bg-blue-100 text-brand-azure px-4 py-2 rounded-full text-sm font-bold uppercase">
               Currently Viewing: Engineering
             </span>
           </div>
@@ -155,7 +155,7 @@ const CadPathway: React.FC = () => {
       {activePathway === 'design' && (
         <div className="max-w-7xl mx-auto px-6 py-20 text-center animate-fade-in-up">
           <div className="bg-slate-50 rounded-3xl p-16 border-2 border-dashed border-slate-200">
-            <div className="w-20 h-20 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-20 h-20 bg-red-50 text-brand-red rounded-full flex items-center justify-center mx-auto mb-6">
               <Lock className="w-10 h-10" />
             </div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Design Pathway Coming Soon</h2>
@@ -171,7 +171,7 @@ const CadPathway: React.FC = () => {
       {activePathway === 'business' && (
         <div className="max-w-7xl mx-auto px-6 py-20 text-center animate-fade-in-up">
           <div className="bg-slate-50 rounded-3xl p-16 border-2 border-dashed border-slate-200">
-            <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-20 h-20 bg-amber-50 text-brand-yellow rounded-full flex items-center justify-center mx-auto mb-6">
               <Lock className="w-10 h-10" />
             </div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Business Pathway Coming Soon</h2>

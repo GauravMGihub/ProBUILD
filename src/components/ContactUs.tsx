@@ -26,18 +26,18 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="contact" className="py-24 bg-brand-cream relative overflow-hidden">
       
       {/* Decorative Blob */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-[-10%] right-[-5%] w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-50"></div>
+        <div className="absolute top-[-10%] right-[-5%] w-96 h-96 bg-yellow-100 rounded-full blur-3xl opacity-50"></div>
         <div className="absolute bottom-[-10%] left-[-5%] w-96 h-96 bg-yellow-100 rounded-full blur-3xl opacity-50"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="text-center mb-16">
-          <h2 className="text-brand-blue font-bold tracking-wide uppercase text-sm mb-3">Get in Touch</h2>
+          <h2 className="text-brand-azure font-bold tracking-wide uppercase text-sm mb-3">Get in Touch</h2>
           <h3 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
             We'd love to hear from you.
           </h3>
@@ -49,7 +49,7 @@ const ContactUs: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           
           {/* --- LEFT COLUMN: INFO CARD --- */}
-          <div className="lg:col-span-1 bg-blue-600 rounded-3xl p-10 text-white flex flex-col justify-between shadow-xl relative overflow-hidden">
+          <div className="lg:col-span-1 bg-brand-azure rounded-3xl p-10 text-white flex flex-col justify-between shadow-xl relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
             
@@ -101,7 +101,7 @@ const ContactUs: React.FC = () => {
           </div>
 
           {/* --- RIGHT COLUMN: THE FORM --- */}
-          <div className="lg:col-span-2 bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-100">
+          <div className="lg:col-span-2 bg-brand-cream rounded-3xl p-8 md:p-10 shadow-xl border border-yellow-100">
             
             {isSubmitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center animate-fade-in py-20">
@@ -124,7 +124,7 @@ const ContactUs: React.FC = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 focus:bg-white"
+                      className="w-full px-4 py-3 rounded-xl border bg-brand-cream-border-slate-200  focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 focus:bg-white"
                       placeholder="John Doe"
                     />
                   </div>

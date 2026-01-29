@@ -104,9 +104,9 @@ import { CheckCircle2, Zap, Layout, Users } from 'lucide-react';
 
 // 1. DEFINE IMAGES FOR THE SLIDESHOW
 const heroImages = [
-  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80", // Team Collaboration
-  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80", // Engineering/Laptop
-  "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"  // Meeting
+  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80", 
+  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80", 
+  "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"  
 ];
 
 const Hero: React.FC = () => {
@@ -123,7 +123,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden bg-gray-50 pt-10 pb-20 sm:pt-16 sm:pb-24">
+    <div className="relative overflow-hidden bg-brand-cream pt-10 pb-20 sm:pt-16 sm:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
           

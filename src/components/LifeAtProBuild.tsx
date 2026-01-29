@@ -12,7 +12,7 @@ const cultureImages = [
 
 const LifeAtProBuild: React.FC = () => {
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-20 bg-brand-cream overflow-hidden">
       
       {/* CSS Animation Styles */}
       <style>{`

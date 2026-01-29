@@ -224,7 +224,7 @@ const RoadmapItem = ({ phase, index }: { phase: any, index: number }) => {
 
       {/* 3. CONTENT CARD */}
       <div className={`flex-1 w-full md:w-1/2 pl-20 md:pl-0 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}>
-        <div className={`relative bg-white rounded-2xl p-6 border ${colors.border} shadow-lg hover:shadow-xl transition-all duration-300 group`}>
+        <div className={`relative bg-brand-cream rounded-2xl p-6 border ${colors.border} shadow-lg hover:shadow-xl transition-all duration-300 group`}>
           
           {/* Decorative Blob */}
           <div className={`absolute top-0 right-0 w-24 h-24 ${colors.light} rounded-bl-[80px] rounded-tr-2xl -z-0 opacity-50`}></div>
@@ -260,7 +260,7 @@ const RoadmapItem = ({ phase, index }: { phase: any, index: number }) => {
 // --- MAIN COMPONENT ---
 const Roadmap: React.FC = () => {
   return (
-    <section id="roadmap" className="py-20 bg-white overflow-hidden">
+    <section id="roadmap" className="py-20 bg-brand-cream overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">

@@ -186,7 +186,7 @@ import Mentors from './Mentors'; // Import your existing Mentors component
 
 const AboutUs: React.FC = () => {
   return (
-    <div className="pt-24 bg-white min-h-screen">
+    <div className="pt-24 bg-brand-cream min-h-screen">
       
       {/* =========================================
           1. HERO HEADER
@@ -240,9 +240,9 @@ const AboutUs: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Card 1 */}
-          <div className="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all duration-300">
+          <div className="bg-brand-cream p-10 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all duration-300">
             <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
-              <Target className="w-8 h-8 text-blue-600" />
+              <Target className="w-8 h-8 text-brand-azure" />
             </div>
             <h3 className="text-2xl font-bold text-slate-900 mb-4">The Gap</h3>
             <p className="text-slate-600 leading-relaxed text-lg">
@@ -251,7 +251,7 @@ const AboutUs: React.FC = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all duration-300">
+          <div className="bg-brand-cream p-10 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all duration-300">
             <div className="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
               <Lightbulb className="w-8 h-8 text-yellow-600" />
             </div>
@@ -262,7 +262,7 @@ const AboutUs: React.FC = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all duration-300">
+          <div className="bg-brand-cream p-10 rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all duration-300">
             <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
               <Users className="w-8 h-8 text-red-600" />
             </div>
@@ -278,10 +278,10 @@ const AboutUs: React.FC = () => {
           4. THE ORIGIN STORY (New Section)
       ========================================= */}
       <section className="mb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="bg-blue-600 rounded-[3rem] p-8 md:p-16 text-white flex flex-col md:flex-row items-center gap-12 relative overflow-hidden">
+        <div className="bg-brand-azure rounded-[3rem] p-8 md:p-16 text-white flex flex-col md:flex-row items-center gap-12 relative overflow-hidden">
           
           {/* Background Decoration */}
-          <Globe className="absolute -bottom-20 -right-20 w-96 h-96 text-blue-500 opacity-20 rotate-12" />
+          <Globe className="absolute -bottom-20 -right-20 w-96 h-96 text-brand-azure opacity-20 rotate-12" />
 
           {/* Text */}
           <div className="flex-1 relative z-10">
@@ -317,7 +317,7 @@ const AboutUs: React.FC = () => {
         <Quote className="w-12 h-12 text-slate-300 mx-auto mb-6" />
         <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6 text-slate-900">
           "Information is free. <br />
-          <span className="text-blue-600">Guidance is priceless.</span>"
+          <span className="text-brand-azure">Guidance is priceless.</span>"
         </h2>
         <p className="text-lg text-slate-500">
           You cannot become an expert by watching videos alone. You need feedback.

@@ -217,7 +217,7 @@ import { Check, Download, ArrowRight } from 'lucide-react';
 
 const ProgramShowcase: React.FC = () => {
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-20 bg-brand-cream-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-12">
@@ -231,7 +231,7 @@ const ProgramShowcase: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
           {/* === CARD 1: FOUNDATION NANO DEGREE === */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-brand-cream rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col hover:shadow-2xl transition-shadow duration-300">
             
             {/* Image */}
             <div className="relative h-64 bg-slate-200">
@@ -319,7 +319,7 @@ const ProgramShowcase: React.FC = () => {
           </div>
 
           {/* === CARD 2: INTERMEDIATE NANO DEGREE === */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-brand-cream rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col hover:shadow-2xl transition-shadow duration-300">
             
             {/* Image */}
             <div className="relative h-64 bg-slate-200">
@@ -407,7 +407,7 @@ const ProgramShowcase: React.FC = () => {
           </div>
 
           {/* === CARD 3: GMESH (NEW) === */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-brand-cream rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col hover:shadow-2xl transition-shadow duration-300">
             
             {/* Image */}
             <div className="relative h-64 bg-slate-200">
@@ -492,7 +492,7 @@ const ProgramShowcase: React.FC = () => {
           </div>
 
           {/* === CARD 4: ELMER (NEW) === */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col hover:shadow-2xl transition-shadow duration-300">
+          <div className="bg-brand-cream rounded-2xl shadow-xl overflow-hidden border border-gray-100 flex flex-col hover:shadow-2xl transition-shadow duration-300">
             
             {/* Image */}
             <div className="relative h-64 bg-slate-200">

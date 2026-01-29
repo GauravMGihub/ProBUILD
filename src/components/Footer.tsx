@@ -79,7 +79,7 @@ import { Link } from 'react-router-dom'; // 1. Import Link
 const Footer: React.FC = () => {
   return (
     // 2. Added id="contact" here so the Navbar scroll works
-    <footer id="contact" className="bg-white border-t border-gray-200 pt-16 pb-8">
+    <footer id="contact" className="bg-brand-cream border-t border-gray-200 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           
@@ -122,16 +122,16 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-slate-900 mb-4">Connect</h4>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company/probuildglobal/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-blue hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/probuildglobal/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-azure hover:text-white transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a href="https://www.instagram.com/probuild.in?igsh=YnN4cHdyODBuNzc2" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-pink-600 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/probuild.in?igsh=YnN4cHdyODBuNzc2" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-red hover:text-white transition-colors">
                 <Instagram size={18} />
               </a>
               
               <a href="https://mail.google.com/mail/?view=cm&fs=1&to=probuild.vet@gmail.com"
                 target="_blank"
-                 rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-red hover:text-white transition-colors">
+                 rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-yellow hover:text-white transition-colors">
                 <Mail size={18} />
               </a>
             </div>

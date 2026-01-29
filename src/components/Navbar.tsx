@@ -215,7 +215,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-      isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100' : 'bg-transparent py-4'
+      isScrolled ? 'bg-brand-cream/90 backdrop-blur-md shadow-sm border-b border-gray-100' : 'bg-brand-cream py-4'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -237,18 +237,18 @@ const Navbar: React.FC = () => {
             <div className="relative group h-16 flex items-center">
                 <button 
                   onClick={() => handleNavigation('/cad-pathway')} 
-                  className="flex items-center text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors gap-1"
+                  className="flex items-center text-sm font-medium text-slate-600 hover:text-brand-azure transition-colors gap-1"
                 >
                   Pathway
                   <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
                 </button>
 
-                <div className="absolute top-14 left-1/2 -translate-x-1/2 w-56 bg-white rounded-xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
+                <div className="absolute top-14 left-1/2 -translate-x-1/2 w-56 bg-brand-cream rounded-xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
                   <div className="absolute -top-4 left-0 w-full h-4 bg-transparent"></div>
                   <div className="py-2">
-                    <Link to="/cad-pathway?tab=engineering" className="block px-4 py-3 text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-600 font-medium transition-colors">Engineering Pathway</Link>
-                    <Link to="/cad-pathway?tab=design" className="block px-4 py-3 text-sm text-slate-600 hover:bg-purple-50 hover:text-purple-600 font-medium transition-colors">Design Pathway</Link>
-                    <Link to="/cad-pathway?tab=business" className="block px-4 py-3 text-sm text-slate-600 hover:bg-green-50 hover:text-green-600 font-medium transition-colors">Business Pathway</Link>
+                    <Link to="/cad-pathway?tab=engineering" className="block px-4 py-3 text-sm text-slate-600 hover:bg-blue-50 hover:text-brand-azure font-medium transition-colors">Engineering Pathway</Link>
+                    <Link to="/cad-pathway?tab=design" className="block px-4 py-3 text-sm text-slate-600 hover:bg-red-50 hover:text-brand-red font-medium transition-colors">Design Pathway</Link>
+                    <Link to="/cad-pathway?tab=business" className="block px-4 py-3 text-sm text-slate-600 hover:bg-amber-50 hover:text-brand-yellow font-medium transition-colors">Business Pathway</Link>
                   </div>
                 </div>
             </div>
@@ -290,7 +290,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-gray-100 shadow-xl absolute w-full">
+        <div className="md:hidden bg-brand-cream border-b border-gray-100 shadow-xl absolute w-full">
           <div className="px-4 pt-2 pb-6 space-y-2 flex flex-col">
             <button onClick={() => handleNavigation('/')} className="text-left px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50">Home</button>
             <button onClick={() => handleNavigation('/cad-pathway')} className="text-left px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50">Pathway</button>

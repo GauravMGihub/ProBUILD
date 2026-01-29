@@ -116,24 +116,24 @@ const PathwaysPreview: React.FC = () => {
       id: 'engineering',
       title: 'Engineering Pathway',
       description: 'Master the technical core. From CAD modeling to automation scripts.',
-      icon: <Wrench className="w-full h-full text-blue-500/20" />, // Made icons subtler
-      color: 'bg-blue-600',
+      icon: <Wrench className="w-full h-full text-brand-azure/20" />, // Made icons subtler
+      color: 'bg-brand-azure',
       points: ['FreeCAD & Parametric Modeling', 'Python Automation', 'Finite Element Analysis (FEA)']
     },
     {
       id: 'design',
       title: 'Design Pathway',
       description: 'Focus on aesthetics and user experience. Render stunning product visuals.',
-      icon: <PenTool className="w-full h-full text-purple-500/20" />,
-      color: 'bg-purple-600',
+      icon: <PenTool className="w-full h-full text-brand-red/20" />,
+      color: 'bg-brand-red',
       points: ['Industrial Design Principles', 'Photorealistic Rendering', 'Product Visualization']
     },
     {
       id: 'business',
       title: 'Business Pathway',
       description: 'Learn the business of engineering. Product management and technical sales.',
-      icon: <TrendingUp className="w-full h-full text-green-500/20" />,
-      color: 'bg-green-600',
+      icon: <TrendingUp className="w-full h-full text-brand-yellow/20" />,
+      color: 'bg-brand-yellow',
       points: ['Technical Sales Strategies', 'Product Lifecycle Management', 'Engineering Leadership']
     }
   ];
@@ -149,7 +149,7 @@ const PathwaysPreview: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">
-          <h2 className="text-blue-400 font-bold tracking-wide uppercase text-sm mb-3">Specialized Tracks</h2>
+          <h2 className="text-brand-azure font-bold tracking-wide uppercase text-sm mb-3">Specialized Tracks</h2>
           <h3 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
             Our Pathways
           </h3>

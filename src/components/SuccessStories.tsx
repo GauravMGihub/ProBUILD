@@ -30,7 +30,7 @@ const students = [
 
 const SuccessStories: React.FC = () => {
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-24 bg-brand-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-20">
@@ -47,12 +47,12 @@ const SuccessStories: React.FC = () => {
           {students.map((student, index) => (
             <div 
               key={index} 
-              className="relative bg-white rounded-2xl shadow-xl border border-slate-100 p-8 pt-24 flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300 group"
+              className="relative bg-brand-cream rounded-2xl shadow-xl border border-slate-100 p-8 pt-24 flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300 group"
             >
               
               {/* --- FLOATING PROFILE IMAGE --- */}
               <div className="absolute -top-16 left-1/2 transform -translate-x-1/2">
-                <div className="w-32 h-32 rounded-full p-1.5 bg-white shadow-lg transition-transform duration-500 ease-out group-hover:scale-110">
+                <div className="w-32 h-32 rounded-full p-1.5 bg-brand-cream shadow-lg transition-transform duration-500 ease-out group-hover:scale-110">
                   <img 
                     src={student.image} 
                     alt={student.name} 

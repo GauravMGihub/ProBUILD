@@ -512,7 +512,7 @@ const StudentWork: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-brand-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Section Heading */}
@@ -526,19 +526,19 @@ const StudentWork: React.FC = () => {
         </div>
 
         {/* === CAROUSEL CONTAINER === */}
-        <div className="relative bg-slate-50 rounded-[2.5rem] border border-slate-200 p-6 md:p-10 shadow-2xl">
+        <div className="relative bg-brand-cream rounded-[2.5rem] border border-slate-200 p-6 md:p-10 shadow-2xl">
           
           {/* NAVIGATION ARROWS */}
           <button 
             onClick={prevProject}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-white text-slate-900 rounded-full shadow-lg hover:bg-slate-100 hover:scale-110 transition-all border border-slate-200 hidden md:flex"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-brand-cream text-slate-900 rounded-full shadow-lg hover:bg-slate-100 hover:scale-110 transition-all border border-slate-200 hidden md:flex"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
           
           <button 
             onClick={nextProject}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-white text-slate-900 rounded-full shadow-lg hover:bg-slate-100 hover:scale-110 transition-all border border-slate-200 hidden md:flex"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-brand-cream text-slate-900 rounded-full shadow-lg hover:bg-slate-100 hover:scale-110 transition-all border border-slate-200 hidden md:flex"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
