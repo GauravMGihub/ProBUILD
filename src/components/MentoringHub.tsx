@@ -43,7 +43,7 @@ import { Calendar, ArrowRight, MessageCircle } from 'lucide-react';
 const MentoringHub: React.FC = () => {
   return (
     // Background matches the dark theme
-    <section className="py-24 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-800 via-slate-900 to-black relative overflow-hidden">
+    <section className="py-24 bg-brand-cream from-slate-800 via-slate-900 to-black relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -52,10 +52,10 @@ const MentoringHub: React.FC = () => {
           <div className="w-16 h-16 mx-auto bg-slate-800 rounded-full flex items-center justify-center mb-6 border border-slate-700 shadow-xl shadow-blue-900/20">
             <MessageCircle className="w-8 h-8 text-yellow-500" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-6">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">
             Not sure where to start? Let's Talk.
           </h2>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Choosing a career path in digital engineering can be confusing. We offer free guidance 
             sessions to help you decide if ProBUILD is right for you.
           </p>
@@ -65,18 +65,18 @@ const MentoringHub: React.FC = () => {
         <div className="max-w-3xl mx-auto">
           
           {/* THE SINGLE EXTENDED CARD */}
-          <div className="group bg-slate-800 rounded-[2rem] p-10 border border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20 text-center">
+          <div className="group bg-brand-cream rounded-[2rem] p-10 border border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20 text-center">
             
             {/* Icon */}
-            <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-600/30 mx-auto group-hover:scale-110 transition-transform duration-300">
+            <div className="w-16 h-16 bg-brand-azure rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-600/30 mx-auto group-hover:scale-110 transition-transform duration-300">
               <Calendar className="w-8 h-8 text-white" />
             </div>
 
             {/* Content */}
-            <h3 className="text-3xl font-bold text-white mb-4">
+            <h3 className="text-3xl font-bold text-slate-900 mb-4">
               Book a 1:1 Session
             </h3>
-            <p className="text-slate-400 text-lg mb-8 max-w-lg mx-auto">
+            <p className="text-slate-600 text-lg mb-8 max-w-lg mx-auto">
               15-minute Zoom call with a lead mentor. Discuss your current skills, 
               career goals, and get a personalized roadmap.
             </p>
@@ -84,7 +84,7 @@ const MentoringHub: React.FC = () => {
             {/* Button */}
             <a 
               href="#" 
-              className="inline-flex items-center text-yellow-400 font-bold text-lg hover:text-yellow-300 transition-colors border-b-2 border-transparent hover:border-yellow-300 pb-1"
+              className="inline-flex items-center text-brand-yellow font-bold text-lg hover:text-yellow-300 transition-colors border-b-2 border-transparent hover:border-yellow-300 pb-1"
             >
               Schedule Free Call
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />

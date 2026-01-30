@@ -7,6 +7,7 @@ import ProgramShowcase from './ProgramShowcase';
 import StudentWork from './StudentWork';
 import StudentPortfolios from './StudentPortfolios';
 import MentoringHub from './MentoringHub';
+import Mentors from './Mentors';
 
 const CadPathway: React.FC = () => {
   // State to track the active tab. Default is 'engineering'.
@@ -97,6 +98,7 @@ const CadPathway: React.FC = () => {
           <StudentWork />
           <StudentPortfolios />
           <MentoringHub />
+          <Mentors />
         </div>
       )}
 

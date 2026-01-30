@@ -1,6 +1,6 @@
 import React from 'react';
 import { Target, Lightbulb, Users, Quote, Globe, Trophy, UserCheck } from 'lucide-react';
-import Mentors from './Mentors'; // Import your existing Mentors component
+
 
 const AboutUs: React.FC = () => {
   return (
@@ -121,7 +121,6 @@ const AboutUs: React.FC = () => {
       {/* =========================================
           6. THE REAL MENTORS COMPONENT
       ========================================= */}
-      <Mentors />
 
     </div>
   );

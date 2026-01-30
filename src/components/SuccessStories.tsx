@@ -8,23 +8,23 @@ const students = [
     // companyName: "Tesla",
     // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png",
     role: "CAD Design Intern",
-    description: "Designed parametric battery casing components using CATIA. Reduced tolerance errors by 15%."
+    // description: "Designed parametric battery casing components using CATIA. Reduced tolerance errors by 15%."
   },
   {
     name: "Anish Patil",
     image: "/probuild/images/students/Anish_Patil.png",
     // companyName: "Siemens",
     // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg",
-    role: "Digital Twin Analyst",
-    description: "Built a functional digital twin of the assembly line to predict maintenance cycles using Python."
+    role: "CAD Design Intern",
+    // description: "Built a functional digital twin of the assembly line to predict maintenance cycles using Python."
   },
   {
     name: "Pranoti Kulkarni",
     image: "/probuild/images/mentors/Pranoti_Kulkarni.png",
     // companyName: "Tata Motors",
     // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg",
-    role: "Automation Engineer",
-    description: "Automated the chassis stress-testing workflow, cutting simulation time from 2 days to 4 hours."
+    role: "CAD Design Intern",
+    // description: "Automated the chassis stress-testing workflow, cutting simulation time from 2 days to 4 hours."
   }
 ];
 
@@ -89,9 +89,9 @@ const SuccessStories: React.FC = () => {
                 
                 {/* 2. The Text in Quotes & Italics */}
                 {/* 'italic' makes it slanted, 'text-slate-600' darkens it slightly for readability */}
-                <p className="text-slate-600 italic leading-relaxed text-sm font-medium">
+                {/* <p className="text-slate-600 italic leading-relaxed text-sm font-medium">
                   "{student.description}"
-                </p>
+                </p> */}
               </div>
 
               <div className="w-12 h-1 bg-slate-200 mt-6 rounded-full"></div>
