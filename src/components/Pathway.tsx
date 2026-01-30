@@ -51,7 +51,7 @@ const CadPathway: React.FC = () => {
             onClick={() => setActivePathway('engineering')}
             className={`flex-1 flex items-center justify-center py-4 px-6 rounded-xl text-sm font-bold uppercase tracking-wide transition-all duration-300 ${
               activePathway === 'engineering'
-                ? 'bg-white text-brand-azure shadow-lg scale-100'
+                ? 'bg-white text-brand-yellow shadow-lg scale-100'
                 : 'text-slate-500 hover:text-slate-700 hover:bg-slate-200'
             }`}
           >
@@ -77,7 +77,7 @@ const CadPathway: React.FC = () => {
             onClick={() => setActivePathway('business')}
             className={`flex-1 flex items-center justify-center py-4 px-6 rounded-xl text-sm font-bold uppercase tracking-wide transition-all duration-300 ${
               activePathway === 'business'
-                ? 'bg-white text-brand-yellow shadow-lg scale-100'
+                ? 'bg-white text-brand-azure shadow-lg scale-100'
                 : 'text-slate-500 hover:text-slate-700 hover:bg-slate-200'
             }`}
           >
@@ -93,13 +93,6 @@ const CadPathway: React.FC = () => {
       {/* CONTENT 1: ENGINEERING PATHWAY (Your Existing Content) */}
       {activePathway === 'engineering' && (
         <div className="animate-fade-in-up">
-          {/* Sub-header for context */}
-          <div className="text-center mb-10">
-            <span className="bg-blue-100 text-brand-azure px-4 py-2 rounded-full text-sm font-bold uppercase">
-              Currently Viewing: Engineering
-            </span>
-          </div>
-
           <ProgramShowcase />
           <StudentWork />
           <StudentPortfolios />
@@ -127,7 +120,7 @@ const CadPathway: React.FC = () => {
       {activePathway === 'business' && (
         <div className="max-w-7xl mx-auto px-6 py-20 text-center animate-fade-in-up">
           <div className="bg-slate-50 rounded-3xl p-16 border-2 border-dashed border-slate-200">
-            <div className="w-20 h-20 bg-amber-50 text-brand-yellow rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-20 h-20 bg-sky-50 text-brand-azure rounded-full flex items-center justify-center mx-auto mb-6">
               <Lock className="w-10 h-10" />
             </div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Business Pathway Coming Soon</h2>

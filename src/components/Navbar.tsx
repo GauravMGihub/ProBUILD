@@ -244,9 +244,9 @@ const Navbar: React.FC = () => {
                 <div className="absolute top-14 left-1/2 -translate-x-1/2 w-56 bg-brand-cream rounded-xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2 z-50 overflow-hidden">
                   <div className="absolute -top-4 left-0 w-full h-4 bg-transparent"></div>
                   <div className="py-2">
-                    <Link to="/cad-pathway?tab=engineering" className="block px-4 py-3 text-sm text-slate-600 hover:bg-blue-50 hover:text-brand-azure font-medium transition-colors">Engineering Pathway</Link>
+                    <Link to="/cad-pathway?tab=engineering" className="block px-4 py-3 text-sm text-slate-600 hover:bg-yellow-50 hover:text-brand-yellow font-medium transition-colors">Engineering Pathway</Link>
                     <Link to="/cad-pathway?tab=design" className="block px-4 py-3 text-sm text-slate-600 hover:bg-red-50 hover:text-brand-red font-medium transition-colors">Design Pathway</Link>
-                    <Link to="/cad-pathway?tab=business" className="block px-4 py-3 text-sm text-slate-600 hover:bg-amber-50 hover:text-brand-yellow font-medium transition-colors">Business Pathway</Link>
+                    <Link to="/cad-pathway?tab=business" className="block px-4 py-3 text-sm text-slate-600 hover:bg-sky-50 hover:text-brand-azure font-medium transition-colors">Business Pathway</Link>
                   </div>
                 </div>
             </div>
