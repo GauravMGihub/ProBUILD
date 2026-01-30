@@ -205,7 +205,7 @@ const Navbar: React.FC = () => {
       className="flex-shrink-0 flex items-center gap-3 cursor-pointer"
     >
        <img 
-         src="/probuild/images/logos/ProBUILD2.png" 
+         src="/images/logos/ProBUILD2.png" 
          alt="ProBUILD Logo" 
          className="h-8 w-auto object-contain" 
        />

@@ -9,8 +9,8 @@ const projects = [
     id: 1,
     title: "Autonomous Gearbox Simulation",
     course: "Foundation", 
-    video: "/probuild/videos/Differential_Gear_box.mp4",
-    model: "/probuild/models/DG_Assembly_Rehan-Assembly.gltf", // Ensure .glb
+    video: "/videos/Differential_Gear_box.mp4",
+    model: "/models/DG_Assembly_Rehan-Assembly.gltf", // Ensure .glb
     // description: "This student utilized FreeCAD to design a fully functional gearbox simulation. By integrating Python scripts, they automated the stress testing scenarios.",
     // tech: ["Built with FreeCAD & Python", "Completed in 4 Weeks"],
     repo: "https://github.com/QuirkyCort/gears"
@@ -19,8 +19,8 @@ const projects = [
     id: 2,
     title: "Elbow Pipe",
     course: "Foundation", 
-    video: "/probuild/videos/Elbow_pipe.mp4",
-    model: "/probuild/models/elbow_pipe_template-Body.gltf",
+    video: "/videos/Elbow_pipe.mp4",
+    model: "/models/elbow_pipe_template-Body.gltf",
     // description: "A comprehensive digital twin project that mimics a real-world assembly line. The project demonstrates real-time data synchronization.",
     // tech: ["IoT Integration", "Real-time Data Visualization"],
     repo: "https://github.com/QuirkyCort/gears"
@@ -29,8 +29,8 @@ const projects = [
     id: 3,
     title: "Piston",
     course: "Foundation", 
-    video: "/probuild/videos/Piston.mp4",
-    model: "/probuild/models/DG_RearCover_Rehan-Body.gltf",
+    video: "/videos/Piston.mp4",
+    model: "/models/DG_RearCover_Rehan-Body.gltf",
     // description: "A parametric drone frame design that automatically adjusts dimensions based on payload weight inputs.",
     // tech: ["IoT Integration", "Real-time Data Visualization"],
     repo: "https://github.com/QuirkyCort/gears"

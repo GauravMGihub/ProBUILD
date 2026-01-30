@@ -22,7 +22,7 @@
 //             {/* Image */}
 //             <div className="relative h-64 bg-slate-200">
 //               <img 
-//                 src="/probuild/images/image1.jpg" 
+//                 src="/images/image1.jpg" 
 //                 alt="Foundation Course" 
 //                 className="w-full h-full object-cover"
 //               />
@@ -116,7 +116,7 @@
 //             {/* Image */}
 //             <div className="relative h-64 bg-slate-200">
 //               <img 
-//                 src="/probuild/images/image2.jpg" 
+//                 src="/images/image2.jpg" 
 //                 alt="Intermediate Course" 
 //                 className="w-full h-full object-cover"
 //               />
@@ -236,7 +236,7 @@ const ProgramShowcase: React.FC = () => {
             {/* Image */}
             <div className="relative h-64 bg-slate-200">
               <img 
-                src="/probuild/images/image1.jpg" 
+                src="/images/image1.jpg" 
                 alt="Foundation Course" 
                 className="w-full h-full object-cover"
               />
@@ -297,7 +297,7 @@ const ProgramShowcase: React.FC = () => {
               {/* Buttons */}
               <div className="mt-auto grid grid-cols-2 gap-4">
                 <a 
-                  href="/probuild/brochures/Foundations.pdf" 
+                  href="/brochures/Foundations.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center justify-center px-4 py-3 border border-slate-200 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-colors cursor-pointer"
@@ -324,7 +324,7 @@ const ProgramShowcase: React.FC = () => {
             {/* Image */}
             <div className="relative h-64 bg-slate-200">
               <img 
-                src="/probuild/images/image2.jpg" 
+                src="/images/image2.jpg" 
                 alt="Intermediate Course" 
                 className="w-full h-full object-cover"
               />
@@ -385,7 +385,7 @@ const ProgramShowcase: React.FC = () => {
               {/* Buttons */}
               <div className="mt-auto grid grid-cols-2 gap-4">
                 <a 
-                  href="/probuild/brochures/Foundations.pdf" 
+                  href="/brochures/Foundations.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center justify-center px-4 py-3 border border-slate-200 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-colors cursor-pointer"
@@ -412,7 +412,7 @@ const ProgramShowcase: React.FC = () => {
             {/* Image */}
             <div className="relative h-64 bg-slate-200">
               <img 
-                src="/probuild/images/image3.jpg" 
+                src="/images/image3.jpg" 
                 alt="Gmesh Course" 
                 className="w-full h-full object-cover"
               />
@@ -497,7 +497,7 @@ const ProgramShowcase: React.FC = () => {
             {/* Image */}
             <div className="relative h-64 bg-slate-200">
               <img 
-                src="/probuild/images/image4.jpg" 
+                src="/images/image4.jpg" 
                 alt="Elmer Course" 
                 className="w-full h-full object-cover"
               />

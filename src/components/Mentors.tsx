@@ -7,7 +7,7 @@ const mentors = [
     role: "Associate CAD Mentor",
     company: "ProBUILD",
     bio: "Tutoring engineering students for FreeCAD and its parameterization capabilities.",
-    image: "/probuild/images/mentors/Pranoti_Kulkarni.png",
+    image: "/images/mentors/Pranoti_Kulkarni.png",
     linkedin: "https://www.linkedin.com/in/pranoti-kulkarni-50533729a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   // {

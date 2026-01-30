@@ -4,7 +4,7 @@ import { Building2, Quote } from 'lucide-react'; // Changed Briefcase to Quote
 const students = [
   {
     name: "Rehan Nadaf",
-    image: "/probuild/images/students/Rehan_Nadaf.png",
+    image: "/images/students/Rehan_Nadaf.png",
     // companyName: "Tesla",
     // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png",
     role: "CAD Design Intern",
@@ -12,7 +12,7 @@ const students = [
   },
   {
     name: "Anish Patil",
-    image: "/probuild/images/students/Anish_Patil.png",
+    image: "/images/students/Anish_Patil.png",
     // companyName: "Siemens",
     // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg",
     role: "CAD Design Intern",
@@ -20,7 +20,7 @@ const students = [
   },
   {
     name: "Pranoti Kulkarni",
-    image: "/probuild/images/mentors/Pranoti_Kulkarni.png",
+    image: "/images/mentors/Pranoti_Kulkarni.png",
     // companyName: "Tata Motors",
     // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg",
     role: "CAD Design Intern",

@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
              <div className="flex items-center gap-1 h-6 mb-4">
                 <img 
-         src="/probuild/images/logos/ProBUILD2.png" 
+         src="/images/logos/ProBUILD2.png" 
          alt="ProBUILD Logo" 
          className="h-6 w-auto object-contain" // Slightly smaller for footer
       />

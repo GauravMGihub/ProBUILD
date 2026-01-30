@@ -55,7 +55,7 @@ import ContactUs from './components/ContactUs';
 const App: React.FC = () => {
   return (
     // The Router wraps the whole application
-    <Router  basename="/probuild">
+    <Router>
       <div className="min-h-screen flex flex-col w-full overflow-x-hidden pt-20">
     
         <Navbar />

@@ -11,7 +11,7 @@
 //     description: "A complete repository containing the FreeCAD files, Python automation scripts, and FEA simulation results.",
 //     link: "#",
 //     linkedin: "https://www.linkedin.com/in/rehan-nadaf?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", // Add real link here
-//     image: "/probuild/images/students/Rehan_Nadaf.png"
+//     image: "/images/students/Rehan_Nadaf.png"
 //   },
 //   {
 //     // student: "Anish Patil",
@@ -21,7 +21,7 @@
 //     description: "Source code for the digital twin dashboard, including the MQTT broker setup and real-time visualization components.",
 //     link: "#",
 //     linkedin: "https://www.linkedin.com/in/anish-patil-kodarkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-//     image: "/probuild/images/students/Anish_Patil.png"
+//     image: "/images/students/Anish_Patil.png"
 //   },
 //   {
 //     // student: "Krishna Manvatkar",
@@ -31,7 +31,7 @@
 //     description: "Python macros for generating variable-size drone frames automatically based on payload weight inputs.",
 //     link: "#",
 //     linkedin: "https://www.linkedin.com/in/krushna-manwatkar-598aa5337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-//     image: "/probuild/images/students/Krushna_Manwatkar.png"
+//     image: "/images/students/Krushna_Manwatkar.png"
 //   }
 // ];
 
@@ -137,7 +137,7 @@ const portfolioData = [
     // description: "A complete repository containing the FreeCAD files, Python automation scripts, and FEA simulation results.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/rehan-nadaf?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    image: "/probuild/images/students/Rehan_Nadaf.png"
+    image: "/images/students/Rehan_Nadaf.png"
   },
   {
     role: "CAD Design Intern",
@@ -145,7 +145,7 @@ const portfolioData = [
     // description: "Source code for the digital twin dashboard, including the MQTT broker setup and real-time visualization components.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/anish-patil-kodarkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    image: "/probuild/images/students/Anish_Patil.png"
+    image: "/images/students/Anish_Patil.png"
   },
   {
     role: "CAD Design Intern",
@@ -153,7 +153,7 @@ const portfolioData = [
     // description: "Python macros for generating variable-size drone frames automatically based on payload weight inputs.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/krushna-manwatkar-598aa5337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    image: "/probuild/images/students/Krushna_Manwatkar.png"
+    image: "/images/students/Krushna_Manwatkar.png"
   },
   // --- DUPLICATES FOR SCROLL DEMO ---
   {
@@ -162,7 +162,7 @@ const portfolioData = [
     // description: "A complete repository containing the FreeCAD files, Python automation scripts, and FEA simulation results.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/aryan-dixit-vd?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    image: "/probuild/images/students/Aryan_Dixit.png"
+    image: "/images/students/Aryan_Dixit.png"
   },
   {
     role: "Mesh Design Intern",
@@ -170,7 +170,7 @@ const portfolioData = [
     // description: "Source code for the digital twin dashboard, including the MQTT broker setup and real-time visualization components.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/nande-aakash?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    image: "/probuild/images/students/Aakash_Nande.png"
+    image: "/images/students/Aakash_Nande.png"
   },
   {
     role: "Frontend Developer Intern",
@@ -178,7 +178,7 @@ const portfolioData = [
     // description: "Python macros for generating variable-size drone frames automatically based on payload weight inputs.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/gaurav-mohagaonkar-b75a75230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    image: "/probuild/images/students/Gaurav_Mohagaonkar.png"
+    image: "/images/students/Gaurav_Mohagaonkar.png"
   }
 ];
 

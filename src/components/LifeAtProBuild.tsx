@@ -2,12 +2,12 @@ import React from 'react';
 
 // You can replace these with your local images later (e.g., "/images/culture1.jpg")
 const cultureImages = [
-  "/probuild/images/image3.jpg",
-  "/probuild/images/image4.jpg",
-  "/probuild/images/image5.jpg",
-  "/probuild/images/image6.jpg",
-  "/probuild/images/image7.jpg",
-  "/probuild/images/image8.jpg",
+  "/images/image3.jpg",
+  "/images/image4.jpg",
+  "/images/image5.jpg",
+  "/images/image6.jpg",
+  "/images/image7.jpg",
+  "/images/image8.jpg",
 ];
 
 const LifeAtProBuild: React.FC = () => {
