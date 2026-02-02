@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Phone, Send, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, CheckCircle, Instagram, Linkedin } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 const ContactUs: React.FC = () => {
@@ -120,10 +120,15 @@ const ContactUs: React.FC = () => {
 
             {/* Socials can go here */}
             <div className="mt-12 pt-8 border-t border-white/20">
-               <p className="text-blue-200 text-sm mb-4">Follow us on social media</p>
-               <div className="flex gap-4">
-                 {/* ... icons ... */}
-               </div>
+               <p className="text-blue-100 text-sm mb-4">Follow us on social media</p>
+               <div className="flex space-x-4">
+              <a href="https://www.linkedin.com/company/probuildglobal/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-azure hover:text-white transition-colors">
+                <Linkedin size={18} />
+              </a>
+              <a href="https://www.instagram.com/probuild.in?igsh=YnN4cHdyODBuNzc2" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-red hover:text-white transition-colors">
+                <Instagram size={18} />
+              </a>
+            </div>
             </div>
           </div>
 
