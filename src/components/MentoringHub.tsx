@@ -1,48 +1,11 @@
-// import React from 'react';
-// import { Calendar, FileText, MessageCircle } from 'lucide-react';
-
-// const MentoringHub: React.FC = () => {
-//   return (
-//     <section id="mentoring" className="py-24 bg-gradient-to-br from-slate-900 to-slate-800 text-white relative overflow-hidden">
-//       {/* Background Decor */}
-//       <div className="absolute top-0 right-0 w-96 h-96 bg-brand-blue/20 rounded-full blur-3xl -mr-20 -mt-20"></div>
-      
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-//         <div className="text-center max-w-3xl mx-auto mb-16">
-//           <div className="inline-block p-3 rounded-full bg-white/10 backdrop-blur-sm mb-6">
-//             <MessageCircle className="w-8 h-8 text-brand-yellow" />
-//           </div>
-//           <h2 className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Not sure where to start? Let's Talk.</h2>
-//           <p className="text-xl text-slate-300">
-//             Choosing a career path in digital engineering can be confusing. We offer free guidance sessions to help you decide if ProBUILD is right for you.
-//           </p>
-//         </div>
-
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-//             {/* Option A */}
-//             <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all cursor-pointer">
-//                 <div className="w-14 h-14 rounded-2xl bg-brand-blue flex items-center justify-center mb-6 shadow-lg shadow-brand-blue/40 group-hover:scale-110 transition-transform">
-//                     <Calendar className="w-7 h-7 text-white" />
-//                 </div>
-//                 <h3 className="text-2xl font-bold mb-3">Book a 1:1 Session</h3>
-//                 <p className="text-slate-400 mb-6">15-minute Zoom call with a lead mentor. Discuss your current skills and career goals.</p>
-//                 <span className="inline-block text-brand-yellow font-bold border-b border-brand-yellow pb-1 group-hover:border-b-2">Schedule Free Call &rarr;</span>
-//             </div>
-
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default MentoringHub; 
-
 import React from 'react';
 import { Calendar, ArrowRight, MessageCircle } from 'lucide-react';
 
 const MentoringHub: React.FC = () => {
+  // REPLACE THIS WITH YOUR ACTUAL LINK
+  const bookingLink = "https://calendly.com/YOUR_USERNAME/15min"; 
+
   return (
-    // Background matches the dark theme
     <section className="py-24 bg-brand-cream from-slate-800 via-slate-900 to-black relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -61,10 +24,9 @@ const MentoringHub: React.FC = () => {
           </p>
         </div>
 
-        {/* --- CHANGED: REMOVED GRID, CENTERED SINGLE CARD --- */}
         <div className="max-w-3xl mx-auto">
           
-          {/* THE SINGLE EXTENDED CARD */}
+          {/* THE SINGLE CARD */}
           <div className="group bg-brand-cream rounded-[2rem] p-10 border border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20 text-center">
             
             {/* Icon */}
@@ -81,10 +43,12 @@ const MentoringHub: React.FC = () => {
               career goals, and get a personalized roadmap.
             </p>
 
-            {/* Button */}
+            {/* --- UPDATED BUTTON SECTION --- */}
             <a 
-              href="#" 
-              className="inline-flex items-center text-brand-yellow font-bold text-lg hover:text-yellow-300 transition-colors border-b-2 border-transparent hover:border-yellow-300 pb-1"
+              href={bookingLink}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-brand-yellow font-bold text-lg hover:text-yellow-300 transition-colors border-b-2 border-transparent hover:border-yellow-300 pb-1 cursor-pointer"
             >
               Schedule Free Call
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
