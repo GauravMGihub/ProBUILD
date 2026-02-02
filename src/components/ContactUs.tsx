@@ -83,9 +83,13 @@ const ContactUs: React.FC = () => {
                   <div>
                     <p className="text-blue-100 text-sm font-medium mb-1">Email Us</p>
                     <a 
-                    href="mailto:probuild.vet@gmail.com" 
-                    className="text-lg font-bold hover:text-blue-200 transition-colors"
-                    >probuild.vet@gmail.com
+                      //href="mailto:probuild.vet@gmail.com"
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=probuild.vet@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg font-bold hover:text-blue-200 transition-colors"
+                    >
+                      probuild.vet@gmail.com
                     </a>
                   </div>
                 </div>
