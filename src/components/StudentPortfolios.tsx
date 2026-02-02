@@ -133,6 +133,13 @@ import { Github, FolderGit2, Linkedin, ChevronLeft, ChevronRight } from 'lucide-
 const portfolioData = [
   {
     role: "CAD Design Intern",
+    project: "Pranoti Kulkarni",
+    link: "#",
+    linkedin: "https://www.linkedin.com/in/pranoti-kulkarni-50533729a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    image: "/images/mentors/Pranoti_Kulkarni.png"
+  },
+  {
+    role: "CAD Design Intern",
     project: "Rehan Nadaf",
     link: "#",
     linkedin: "https://www.linkedin.com/in/rehan-nadaf?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",

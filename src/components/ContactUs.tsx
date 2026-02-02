@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Phone, Send, CheckCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const ContactUs: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -16,13 +17,31 @@ const ContactUs: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here is where you would integrate EmailJS or your backend API
-    console.log("Form Submitted:", formData);
-    
-    // Simulate success
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 5000); // Reset after 5s
-    setFormData({ name: '', email: '', subject: '', message: '' });
+
+    // Replace these strings with your actual keys from EmailJS
+    const serviceID = 'service_3n9heeg';
+    const templateID = 'template_xce2eld';
+    const publicKey = 'XAGZuH7muBZD_ZSqg';
+
+    // Create a temporary object to match EmailJS template variables
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      })
+      .catch((err) => {
+        console.log('FAILED...', err);
+        alert("Failed to send message. Please try again.");
+      });
   };
 
   return (
@@ -63,7 +82,11 @@ const ContactUs: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-blue-100 text-sm font-medium mb-1">Email Us</p>
-                    <a href="probuild.vet@gmail.com" className="text-lg font-bold hover:text-blue-200 transition-colors">probuild.vet@gmail.com</a>
+                    <a 
+                    href="mailto:probuild.vet@gmail.com" 
+                    className="text-lg font-bold hover:text-blue-200 transition-colors"
+                    >probuild.vet@gmail.com
+                    </a>
                   </div>
                 </div>
 
@@ -124,7 +147,7 @@ const ContactUs: React.FC = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border bg-brand-cream-border-slate-200  focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 focus:bg-white"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200  focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 focus:bg-white"
                       placeholder="John Doe"
                     />
                   </div>
