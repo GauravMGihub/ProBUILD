@@ -126,7 +126,7 @@
 // export default StudentPortfolios;
 
 
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Github, FolderGit2, Linkedin, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // --- DATA ---
@@ -134,7 +134,6 @@ const portfolioData = [
   {
     role: "CAD Design Intern",
     project: "Rehan Nadaf",
-    // description: "A complete repository containing the FreeCAD files, Python automation scripts, and FEA simulation results.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/rehan-nadaf?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/students/Rehan_Nadaf.png"
@@ -142,7 +141,6 @@ const portfolioData = [
   {
     role: "CAD Design Intern",
     project: "Anish Patil",
-    // description: "Source code for the digital twin dashboard, including the MQTT broker setup and real-time visualization components.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/anish-patil-kodarkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/students/Anish_Patil.png"
@@ -150,16 +148,13 @@ const portfolioData = [
   {
     role: "CAD Design Intern",
     project: "Krushna Manwatkar",
-    // description: "Python macros for generating variable-size drone frames automatically based on payload weight inputs.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/krushna-manwatkar-598aa5337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/students/Krushna_Manwatkar.png"
   },
-  // --- DUPLICATES FOR SCROLL DEMO ---
   {
     role: "Mesh Design Intern",
     project: "Aryan Dixit",
-    // description: "A complete repository containing the FreeCAD files, Python automation scripts, and FEA simulation results.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/aryan-dixit-vd?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/students/Aryan_Dixit.png"
@@ -167,7 +162,6 @@ const portfolioData = [
   {
     role: "Mesh Design Intern",
     project: "Aakash Nande",
-    // description: "Source code for the digital twin dashboard, including the MQTT broker setup and real-time visualization components.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/nande-aakash?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/students/Aakash_Nande.png"
@@ -175,7 +169,6 @@ const portfolioData = [
   {
     role: "Frontend Developer Intern",
     project: "Gaurav Mohagaonkar",
-    // description: "Python macros for generating variable-size drone frames automatically based on payload weight inputs.",
     link: "#",
     linkedin: "https://www.linkedin.com/in/gaurav-mohagaonkar-b75a75230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/students/Gaurav_Mohagaonkar.png"
@@ -185,16 +178,45 @@ const portfolioData = [
 const StudentPortfolios: React.FC = () => {
   // 1. REF TO CONTROL SCROLLING
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  
+  // 2. STATE FOR ACTIVE INDEX (For the dots)
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  // 2. SCROLL FUNCTION
+  // Constants for calculation
+  const CARD_WIDTH = 350;
+  const GAP = 32; // gap-8 is 2rem = 32px
+  const ITEM_WIDTH = CARD_WIDTH + GAP;
+
+  // 3. SCROLL FUNCTION (ARROWS)
   const scroll = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
       const { current } = scrollContainerRef;
-      const scrollAmount = 400; // Scroll by approx one card width
+      const scrollAmount = ITEM_WIDTH; 
       current.scrollBy({ 
         left: direction === 'left' ? -scrollAmount : scrollAmount, 
         behavior: 'smooth' 
       });
+    }
+  };
+
+  // 4. HANDLE SCROLL EVENT (To update dots when swiping)
+  const handleScroll = () => {
+    if (scrollContainerRef.current) {
+      const scrollLeft = scrollContainerRef.current.scrollLeft;
+      // Calculate which index is currently most visible
+      const newIndex = Math.round(scrollLeft / ITEM_WIDTH);
+      setActiveIndex(newIndex);
+    }
+  };
+
+  // 5. SCROLL TO SPECIFIC INDEX (When clicking a dot)
+  const scrollToIndex = (index: number) => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({
+        left: index * ITEM_WIDTH,
+        behavior: 'smooth'
+      });
+      setActiveIndex(index);
     }
   };
 
@@ -231,18 +253,15 @@ const StudentPortfolios: React.FC = () => {
             <ChevronRight className="w-6 h-6" />
           </button>
 
-          {/* 
-             --- SCROLL CONTAINER --- 
-             - scrollbar-hide: Using CSS to hide bar
-             - pb-12: Padding bottom for shadows
-             - pt-12: Padding top for floating heads
+          {/* --- SCROLL CONTAINER --- 
+              Added onScroll={handleScroll} here
           */}
           <div 
             ref={scrollContainerRef}
+            onScroll={handleScroll}
             className="flex overflow-x-auto gap-8 pb-12 pt-12 snap-x snap-mandatory scroll-smooth scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} // Hide scrollbar in Firefox/IE
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} 
           >
-            {/* Hide scrollbar in Webkit (Chrome/Safari) */}
             <style>{`
               .scrollbar-hide::-webkit-scrollbar {
                   display: none;
@@ -252,11 +271,9 @@ const StudentPortfolios: React.FC = () => {
             {portfolioData.map((item, index) => (
               <div 
                 key={index} 
-                // FIXED WIDTHS to maintain ratio (w-[350px])
                 className="relative group min-w-[320px] w-[350px] snap-center"
               >
-                
-                {/* FLOATING IMAGE (Positioned to not cut off) */}
+                {/* FLOATING IMAGE */}
                 <div className="absolute -top-10 left-8 z-20">
                   <div className="w-32 h-32 rounded-full border-4 border-brand-cream shadow-lg overflow-hidden bg-white transition-transform duration-500 ease-out group-hover:scale-110">
                     <img 
@@ -268,14 +285,11 @@ const StudentPortfolios: React.FC = () => {
                 </div>
 
                 {/* BLUE CARD */}
-                {/* Adjusted padding to fix "long card" look */}
                 <div className="bg-brand-azure rounded-3xl p-8 pt-16 h-full relative overflow-hidden shadow-xl transition-transform duration-300 group-hover:-translate-y-2 flex flex-col">
-                  
                   {/* Background Watermark */}
                   <Github className="absolute -bottom-6 -right-6 w-40 h-40 text-white opacity-10 transform rotate-12 group-hover:scale-110 transition-transform duration-500 pointer-events-none" />
 
                   <div className="relative z-10 flex flex-col h-full">
-                    
                     {/* Icon Top Right */}
                     <div className="flex justify-end mb-3">
                       <div className="bg-white/20 w-10 h-10 rounded-xl flex items-center justify-center backdrop-blur-sm">
@@ -290,9 +304,6 @@ const StudentPortfolios: React.FC = () => {
                     <div className="text-blue-100 font-medium mb-3 text-sm uppercase tracking-wide">
                       {item.role}
                     </div>
-                    {/* <p className="text-blue-50 leading-relaxed mb-6 text-sm">
-                      {item.description}
-                    </p> */}
 
                     {/* Buttons */}
                     <div className="mt-auto grid grid-cols-5 gap-3">
@@ -321,10 +332,25 @@ const StudentPortfolios: React.FC = () => {
                 </div>
               </div>
             ))}
-
           </div>
-        </div>
 
+          {/* --- PAGINATION DOTS --- */}
+          <div className="flex justify-center items-center mt-3 gap-2">
+            {portfolioData.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => scrollToIndex(index)}
+                className={`rounded-full transition-all duration-300 ease-out ${
+                  activeIndex === index 
+                    ? "w-3 h-3 bg-slate-900" // Active State: Dark Pill
+                    : "w-2 h-2 bg-slate-300 hover:bg-slate-400" // Inactive State: Light Circle
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+
+        </div>
       </div>
     </section>
   );
