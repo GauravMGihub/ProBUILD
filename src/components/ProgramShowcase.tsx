@@ -50,7 +50,7 @@ const programs: Program[] = [
     category: "ADVANCED PROGRAM",
     title: "FreeCAD",
     highlight: "Intermediate",
-    highlightColor: "text-orange-500",
+    highlightColor: "text-brand-red",
     suffix: "Nano Degree",
     image: "/images/image2.jpg",
     badge: "Admissions Open",
@@ -70,7 +70,7 @@ const programs: Program[] = [
     category: "SPECIALIZED MODULE",
     title: "Gmesh",
     highlight: "Meshing",
-    highlightColor: "text-purple-600",
+    highlightColor: "text-brand-azure",
     suffix: "Expert",
     image: "/images/image3.jpg",
     badge: "Admissions Closed",
@@ -90,7 +90,7 @@ const programs: Program[] = [
     category: "SIMULATION EXPERT",
     title: "Elmer",
     highlight: "Multiphysics",
-    highlightColor: "text-teal-500",
+    highlightColor: "text-green-600",
     suffix: "Solver",
     image: "/images/image4.jpg",
     badge: "Admissions Closed",
@@ -141,7 +141,7 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => {
             {program.category}
           </div>
           <h3 className="text-3xl font-bold text-slate-900">
-            {program.title} <span className={program.highlightColor}>{program.highlight}</span> <span className="text-brand-azure">{program.suffix}</span>
+            {program.title} <span className={program.highlightColor}>{program.highlight}</span> <span className="text-black">{program.suffix}</span>
           </h3>
         </div>
       </div>

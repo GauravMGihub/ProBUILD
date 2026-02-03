@@ -78,7 +78,7 @@ const SuccessStories: React.FC = () => {
               </div> */}
 
               {/* Position */}
-              <div className="text-blue-600 font-bold uppercase tracking-wide text-sm mb-6">
+              <div className="text-black font-bold uppercase tracking-wide text-sm mb-6">
                 {student.role}
               </div>
 

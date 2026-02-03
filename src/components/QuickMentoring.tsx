@@ -20,8 +20,8 @@ const QuickMentoring: React.FC = () => {
       <div className="max-w-3xl mx-auto px-6 relative z-10 text-center">
         
         {/* Header Icon */}
-        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-          <HelpCircle className="w-8 h-8 text-blue-600" />
+        <div className="w-16 h-16 bg-brand-azure/20 rounded-full flex items-center justify-center mx-auto mb-6">
+          <HelpCircle className="w-8 h-8 text-brand-azure" />
         </div>
 
         <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-4">

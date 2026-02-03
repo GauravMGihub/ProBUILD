@@ -12,7 +12,7 @@ const MentoringHub: React.FC = () => {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="w-16 h-16 mx-auto bg-slate-800 rounded-full flex items-center justify-center mb-6 border border-slate-700 shadow-xl shadow-blue-900/20">
+          <div className="w-16 h-16 mx-auto bg-brand-yellow/10 rounded-full flex items-center justify-center mb-6 shadow-xl shadow-blue-900/20">
             <MessageCircle className="w-8 h-8 text-yellow-500" />
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">

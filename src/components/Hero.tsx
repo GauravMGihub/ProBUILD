@@ -28,12 +28,12 @@ const Hero: React.FC = () => {
           
           {/* Left Column: Text */}
           <div className="lg:col-span-6 text-center lg:text-left z-10 relative">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-brand-blue text-xs font-bold uppercase tracking-wider mb-6 animate-fade-in-up">
-              <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-azure/20 text-brand-azure text-xs font-bold uppercase tracking-wider mb-6 animate-fade-in-up">
+              <span className="w-2 h-2 rounded-full bg-brand-azure animate-pulse"></span>
               New Cohort Starting Fall 2026
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tighter leading-[1.1] mb-6">
               Build your <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-cyan-500">Profile</span>,<br className="hidden lg:block"/>
               not just a Resume.
             </h1>
@@ -51,11 +51,11 @@ const Hero: React.FC = () => {
 
             <div className="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-slate-500 font-medium">
                 <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-brand-blue" />
+                    <CheckCircle2 className="w-5 h-5 text-brand-azure" />
                     <span>Verified Certs</span>
                 </div>
                 <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-brand-blue" />
+                    <CheckCircle2 className="w-5 h-5 text-brand-azure" />
                     <span>Live Mentors</span>
                 </div>
             </div>

@@ -310,7 +310,7 @@ const RoadmapItem = ({ phase, index }: { phase: any, index: number }) => {
     >
       
       {/* 1. IMAGE SIDE (Replaces Empty Space) */}
-      <div className={`flex-1 w-full md:w-1/2 hidden md:block ${isEven ? 'md:pl-8' : 'md:pr-8'}`}>
+      <div className={`flex-1 w-full md:w-1/2  ${isEven ? 'md:pl-8' : 'md:pr-8'}`}>
          {/* 
             - Straight (No rotation)
             - Closer to center (reduced margins via pl-8/pr-8 above)
@@ -380,7 +380,7 @@ const Roadmap: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">
-          <h2 className="text-brand-blue font-bold tracking-wide uppercase text-sm mb-3">Service Roadmap</h2>
+          <h2 className="text-brand-azure font-bold tracking-wide uppercase text-sm mb-3">Service Roadmap</h2>
           <h3 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-4">
             Your Journey
           </h3>
