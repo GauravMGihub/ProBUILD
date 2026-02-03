@@ -384,10 +384,10 @@ const RoadmapItem = ({ phase, index }: { phase: any, index: number }) => {
         <div className={`relative rounded-3xl p-8 border ${colors.border} shadow-xl hover:shadow-2xl transition-all duration-300 group ${colors.light}`}>
             
             <div className="relative z-10">
-              <span className={`inline-block px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider mb-4 ${colors.light} ${colors.text} bg-white/60`}>
+              <span className={`inline-block px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider mb-4 ${colors.light} ${colors.text} bg-white/60`}>
                   {phase.phase}
               </span>
-              <h4 className="text-3xl font-bold text-slate-900 mb-4 font-sans">
+              <h4 className="text-3xl  text-slate-900 mb-3 font-sans">
                   {phase.title}
               </h4>
               <ul className="space-y-4">
@@ -396,7 +396,7 @@ const RoadmapItem = ({ phase, index }: { phase: any, index: number }) => {
                       <span className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white mr-3 ${colors.bg}`}>
                       {step.num}
                       </span>
-                      <span className="text-slate-700 text-sm font-semibold">
+                      <span className="text-slate-700 text-sm font-medium">
                       {step.text}
                       </span>
                   </li>

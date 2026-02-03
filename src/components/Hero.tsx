@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
               not just a Resume.
             </h1>
             
-            <p className="mt-4 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="mt-4 text-lg md:text-2xl sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               Digital Engineering & Automation Pathway. A program designed to make students 
               industry-relevant through <span className="text-slate-900 font-semibold underline decoration-brand-yellow decoration-2 underline-offset-2">real projects</span>, mentorship, and portfolio-driven growth.
             </p>

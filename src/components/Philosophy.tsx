@@ -23,13 +23,13 @@ const Philosophy: React.FC = () => {
                 <div className="w-12 h-12 bg-brand-red rounded-xl flex items-center justify-center text-white mb-6 shadow-lg shadow-brand-red/30">
                   <Briefcase />
                 </div>
-                <h4 className="text-3xl font-bold text-slate-900 mb-4">Real World Projects</h4>
-                <p className="text-lg text-slate-600 max-w-md leading-relaxed">
+                <h4 className="text-2xl font-semibold text-slate-900 mb-4">Real World Projects</h4>
+                <p className="text-md text-slate-600 max-w-md leading-relaxed  ">
                   We don't do toy projects. We solve industry problems. You will work on automation systems, digital twins, and engineering designs that mimic actual corporate deliverables.
                 </p>
               </div>
               <div className="mt-8">
-                <a href="#" className="inline-flex items-center text-brand-red font-bold hover:underline">
+                <a href="#" className="inline-flex items-center text-brand-red font-semibold hover:underline">
                   See Project Gallery <ArrowUpRight className="ml-1 w-4 h-4" />
                 </a>
               </div>
@@ -45,7 +45,7 @@ const Philosophy: React.FC = () => {
                <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center text-white mb-6">
                   <Github />
                 </div>
-              <h4 className="text-2xl font-bold mb-4">Portfolio Driven</h4>
+              <h4 className="text-2xl font-semibold mb-4">Portfolio Driven</h4>
               <p className="text-blue-100 leading-relaxed">
                 Students leave with a GitHub link, not just a certificate. Your code and designs speak louder than grades.
               </p>
@@ -63,13 +63,13 @@ const Philosophy: React.FC = () => {
                 <div className="w-12 h-12 bg-brand-yellow rounded-xl flex items-center justify-center text-white mb-6 shadow-lg shadow-brand-yellow/30">
                   <GraduationCap />
                 </div>
-                <h4 className="text-2xl font-bold text-slate-900 mb-3">Expert Mentorship</h4>
-                <p className="text-slate-600 leading-relaxed text-sm mb-6">
+                <h4 className="text-2xl font-semibold text-slate-900 mb-3">Expert Mentorship</h4>
+                <p className="text-slate-600 leading-relaxed text-md mb-6">
                   Weekly code reviews and mock interviews with engineers from top firms.
                 </p>
              </div>
              <div className="relative z-10 mt-auto">
-                 <button className="w-full py-3 bg-white text-slate-900 font-bold rounded-xl shadow-sm hover:shadow-md border border-brand-yellow/20 transition-all">
+                 <button className="w-full py-3 bg-white text-slate-900 font-semibold rounded-xl shadow-sm hover:shadow-md border border-brand-yellow/20 transition-all">
                     Meet Mentors
                  </button>
              </div>
@@ -96,17 +96,17 @@ const Philosophy: React.FC = () => {
 
                 {/* Text Content */}
                 <div>
-                   <h4 className="text-3xl font-bold text-slate-900 mb-4">Internship </h4>
-                   <p className="text-lg text-slate-600 leading-relaxed">
+                   <h4 className="text-2xl font-semibold text-slate-900 mb-4">Internship </h4>
+                   <p className="text-md text-slate-600 leading-relaxed">
                      We don't just teach; we connect. Top performers get guaranteed interview opportunities with our hiring partners in the Automotive and Automation sectors.
                    </p>
                    
                    {/* Badges */}
                    <div className="mt-6 flex flex-wrap gap-3">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-bold uppercase tracking-wide border border-green-200">
+                      <span className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide border border-green-200">
                         100% Placement Support
                       </span>
-                      <span className="inline-flex items-center px-3 py-1 rounded-full bg-white border border-green-200 text-green-700 text-xs font-bold uppercase tracking-wide">
+                      <span className="inline-flex items-center px-3 py-1 rounded-full bg-white border border-green-200 text-green-700 text-xs font-semibold uppercase tracking-wide">
                         Hiring Partners
                       </span>
                    </div>

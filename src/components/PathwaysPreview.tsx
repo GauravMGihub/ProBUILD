@@ -48,7 +48,7 @@ const PathwaysPreview: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-brand-azure font-bold tracking-wide uppercase text-sm mb-3">Specialized Tracks</h2>
           {/* Changed text-white to text-slate-900 */}
-          <h3 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">
+          <h3 className="text-3xl md:text-5xl font-semibold text-slate-900 tracking-tight">
             Our Pathways
           </h3>
         </div>
@@ -72,7 +72,7 @@ const PathwaysPreview: React.FC = () => {
                 {/* Changed text-white to text-slate-900 */}
                 <h4 className="text-2xl font-bold text-slate-900 mb-3">{path.title}</h4>
                 {/* Changed text-slate-400 to text-slate-600 */}
-                <p className="text-slate-600 leading-relaxed text-sm">
+                <p className="text-slate-600 leading-relaxed text-md">
                   {path.description}
                 </p>
               </div>
@@ -94,7 +94,7 @@ const PathwaysPreview: React.FC = () => {
               <div className="relative z-10 mt-auto">
                 <button
                   onClick={() => handleNavigate(path.id)}
-                  className={`w-full py-3 rounded-xl text-white font-bold shadow-lg ${path.color} hover:opacity-90 transition-opacity flex items-center justify-center group-hover:shadow-xl`}
+                  className={`w-full py-3 rounded-xl text-white font-semibold shadow-lg ${path.color} hover:opacity-90 transition-opacity flex items-center justify-center group-hover:shadow-xl`}
                 >
                   View Details
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
