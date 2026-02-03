@@ -207,9 +207,9 @@ const Navbar: React.FC = () => {
        <img 
          src="/images/logos/ProBUILD2.png" 
          alt="ProBUILD Logo" 
-         className="h-8 w-auto object-contain" 
+         className="h-6 md:h-10 w-auto object-contain" 
        />
-       <span className="font-semibold text-4xl md:text-4xl tracking-tight text-slate-900 ml-1">ProBUILD</span>
+       <span className="font-semibold text-3xl md:text-4xl tracking-tight text-slate-900 ml-1">ProBUILD</span>
     </div>
   );
 
@@ -293,9 +293,9 @@ const Navbar: React.FC = () => {
             <button onClick={() => handleNavigation('/')} className="text-left px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50">Home</button>
             <button onClick={() => handleNavigation('/cad-pathway')} className="text-left px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50">Pathway</button>
             <button onClick={() => handleNavigation('/about')} className="text-left px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50">About Us</button>
-            <button onClick={() => handleNavigation('/', 'contact')} className="text-left px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50">Contact Us</button>
+            <button onClick={() => handleNavigation('/contact')} className="text-left px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50">Contact Us</button>
             <div className="mt-4 space-y-3 pt-4 border-t border-gray-100">
-              <button className="w-full text-center px-4 py-3 rounded-xl bg-brand-red text-white font-bold shadow-lg shadow-brand-red/30">
+              <button onClick={() => handleNavigation('/contact')}  className="w-full text-center px-4 py-3 rounded-xl bg-brand-red text-white font-bold shadow-lg shadow-brand-red/30">
                 Apply for Cohort 2026
               </button>
             </div>

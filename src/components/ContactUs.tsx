@@ -45,7 +45,7 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-brand-cream relative overflow-hidden">
+    <section id="contact" className="pt-24 md:pt-32 pb-16 md:pb-24 bg-brand-cream relative overflow-hidden">
       
       {/* Decorative Blob */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">

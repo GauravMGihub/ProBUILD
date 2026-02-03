@@ -42,7 +42,7 @@ const SuccessStories: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mt-20 mx-auto">
           
           {students.map((student, index) => (
             <div 

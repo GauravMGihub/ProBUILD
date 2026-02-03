@@ -306,53 +306,59 @@ const RoadmapItem = ({ phase, index }: { phase: any, index: number }) => {
   return (
     <div 
       ref={domRef}
-      className={`relative flex flex-col md:flex-row items-center transition-all duration-1000 ease-out ${isEven ? 'md:flex-row-reverse' : ''} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-24'}`}
+      // CHANGED: Removed 'flex-row' logic for mobile. It is now ALWAYS 'flex-col' on mobile.
+      // On desktop (md:), it switches to row/row-reverse.
+      className={`relative flex flex-col md:flex-row items-center transition-all duration-1000 ease-out 
+        ${isEven ? 'md:flex-row-reverse' : 'md:flex-row'} 
+        ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-24'}
+      `}
     >
       
-      {/* 1. IMAGE SIDE (Replaces Empty Space) */}
-      <div className={`flex-1 w-full md:w-1/2  ${isEven ? 'md:pl-8' : 'md:pr-8'}`}>
-         {/* 
-            - Straight (No rotation)
-            - Closer to center (reduced margins via pl-8/pr-8 above)
-         */}
-         <div className="w-full h-full overflow-hidden rounded-2xl shadow-lg border-4 border-white">
+      {/* 1. IMAGE SIDE */}
+      {/* Mobile: Full Width, Bottom Margin. Desktop: 1/2 Width, Side Padding */}
+      <div className={`w-full md:w-1/2 mb-8 md:mb-0 ${isEven ? 'md:pl-12' : 'md:pr-12'}`}>
+         <div className="w-full h-56 md:h-64 overflow-hidden rounded-3xl shadow-lg border-4 border-white mx-auto relative z-10">
             <img 
                 src={phase.image} 
                 alt={phase.title} 
-                className="w-full h-64 object-cover" 
+                className="w-full h-full object-cover" 
             />
+            {/* Optional: Add the Icon Overlay on the Image for Mobile Style */}
+            <div className={`absolute top-4 left-4 w-10 h-10 rounded-full ${colors.bg} flex items-center justify-center text-white md:hidden shadow-lg`}>
+               {phase.icon}
+            </div>
          </div>
       </div>
 
-      {/* 2. CENTER MARKER (Larger) */}
-      <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 z-10 flex items-center justify-center">
-        {/* Increased size from w-12 to w-20 */}
-        <div className={`w-20 h-20 rounded-full border-4 border-white ${colors.bg} shadow-lg ${colors.shadow} flex items-center justify-center relative transition-transform duration-500 ${isVisible ? 'scale-100' : 'scale-0'}`}>
+      {/* 2. CENTER MARKER (Desktop Only) */}
+      {/* Hidden on mobile because the line is behind the cards now */}
+      <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 items-center justify-center">
+        <div className={`w-16 h-16 rounded-full border-4 border-white ${colors.bg} shadow-lg ${colors.shadow} flex items-center justify-center relative transition-transform duration-500 ${isVisible ? 'scale-100' : 'scale-0'}`}>
           {phase.icon}
         </div>
       </div>
 
       {/* 3. CONTENT CARD (Your styled version) */}
-      <div className={`flex-1 w-full md:w-1/2 pl-24 md:pl-0 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}>
+      {/* <div className={`flex-1 w-full md:w-1/2 pl-24  md:pl-0 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}> */}
         
         {/* Applied your background color logic here */}
-        <div className={`relative rounded-2xl p-6 border ${colors.border} shadow-lg hover:shadow-xl transition-all duration-300 group ${colors.light}`}>
+        {/* <div className={`relative rounded-2xl p-6 border ${colors.border} shadow-lg hover:shadow-xl transition-all duration-300 group ${colors.light}`}>
             
             <div className={`absolute top-0 right-0 w-24 h-24 bg-white/40 rounded-bl-[80px] rounded-tr-2xl -z-0`}></div>
 
-            <div className="relative z-10">
+            <div className="relative z-10"> */}
             {/* PHASE TAG */}
-            <span className={`inline-block px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider mb-3 ${colors.light} ${colors.text} bg-white/60`}>
+            {/* <span className={`inline-block px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider mb-3 ${colors.light} ${colors.text} bg-white/60`}>
                 {phase.phase}
-            </span>
+            </span> */}
             
             {/* TITLE */}
-            <h4 className="text-[33px] font-semibold text-slate-900 mb-4 leading-tight font-sans">
+            {/* <h4 className="text-[33px] font-semibold text-slate-900 mb-4 leading-tight font-sans">
                 {phase.title}
-            </h4>
+            </h4> */}
             
             {/* STEPS */}
-            <ul className="space-y-3">
+            {/* <ul className="space-y-3">
                 {phase.steps.map((step: any, idx: number) => (
                 <li key={idx} className="flex items-center">
                     <span className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white mr-3 ${colors.bg}`}>
@@ -364,6 +370,38 @@ const RoadmapItem = ({ phase, index }: { phase: any, index: number }) => {
                 </li>
                 ))}
             </ul>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  );
+}; */}
+      
+      {/* 3. CONTENT CARD (Text Side) */}
+      <div className={`w-full md:w-1/2 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}>
+        <div className={`relative rounded-3xl p-8 border ${colors.border} shadow-xl hover:shadow-2xl transition-all duration-300 group ${colors.light}`}>
+            
+            <div className="relative z-10">
+              <span className={`inline-block px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider mb-4 ${colors.light} ${colors.text} bg-white/60`}>
+                  {phase.phase}
+              </span>
+              <h4 className="text-3xl font-bold text-slate-900 mb-4 font-sans">
+                  {phase.title}
+              </h4>
+              <ul className="space-y-4">
+                  {phase.steps.map((step: any, idx: number) => (
+                  <li key={idx} className="flex items-center">
+                      <span className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white mr-3 ${colors.bg}`}>
+                      {step.num}
+                      </span>
+                      <span className="text-slate-700 text-sm font-semibold">
+                      {step.text}
+                      </span>
+                  </li>
+                  ))}
+              </ul>
             </div>
 
         </div>
@@ -389,21 +427,24 @@ const Roadmap: React.FC = () => {
 
         <div className="relative">
           
-          {/* CENTRAL LINE */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-slate-300 rounded-full"></div>
+          {/* CENTRAL LINE (Desktop Only) */}
+  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-slate-200 rounded-full"></div>
+  
+  {/* MOBILE LINE (Left Side) - OPTIONAL */}
+  {/* If you want a line connecting the cards on mobile, use this. 
+      But for "Stacked" layout, removing the line often looks cleaner. 
+      Try commenting this out if it still looks messy. 
+  */}
+          <div className="md:hidden absolute left-8 top-0 h-full w-1 bg-slate-200 rounded-full -z-10"></div>
           
-          <div className="md:hidden absolute left-8 top-0 h-full w-1 bg-slate-300 rounded-full"></div>
+          <div className="space-y-16 pb-12"> {/* Increased spacing for mobile stack */}
+    {phases.map((phase, index) => (
+      <RoadmapItem key={phase.id} phase={phase} index={index} />
+    ))}
+  </div>
 
-          {/* SPACING */}
-          <div className="space-y-12 pb-12">
-            {phases.map((phase, index) => (
-              <RoadmapItem key={phase.id} phase={phase} index={index} />
-            ))}
-          </div>
-
-        </div>
-
-      </div>
+</div>
+</div>
     </section>
   );
 };
