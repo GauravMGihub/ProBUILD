@@ -141,21 +141,21 @@ const portfolioData = [
   {
     role: "CAD Design Intern",
     project: "Rehan Nadaf",
-    link: "#",
+    link: "https://github.com/RehanMech/ProBUILD_FreeCAD.git",
     linkedin: "https://www.linkedin.com/in/rehan-nadaf?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/students/Rehan_Nadaf.png"
   },
   {
     role: "CAD Design Intern",
     project: "Anish Patil",
-    link: "#",
+    link: "https://github.com/Anish-Kodarkar/ProBUILD_FreeCAD.git",
     linkedin: "https://www.linkedin.com/in/anish-patil-kodarkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/students/Anish_Patil.png"
   },
   {
     role: "CAD Design Intern",
     project: "Krushna Manwatkar",
-    link: "#",
+    link: "https://github.com/krushnamanwatkar19-pixel/ProBUILD_FreeCAD.git",
     linkedin: "https://www.linkedin.com/in/krushna-manwatkar-598aa5337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/students/Krushna_Manwatkar.png"
   },
@@ -169,14 +169,14 @@ const portfolioData = [
   {
     role: "Mesh Design Intern",
     project: "Aakash Nande",
-    link: "#",
+    link: "https://github.com/aakash-216/internship_ValidusTech_meshing.git",
     linkedin: "https://www.linkedin.com/in/nande-aakash?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/students/Aakash_Nande.png"
   },
   {
     role: "Frontend Developer Intern",
     project: "Gaurav Mohagaonkar",
-    link: "#",
+    link: "https://github.com/GauravMGihub/ProBUILD.git",
     linkedin: "https://www.linkedin.com/in/gaurav-mohagaonkar-b75a75230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/students/Gaurav_Mohagaonkar.png"
   }
