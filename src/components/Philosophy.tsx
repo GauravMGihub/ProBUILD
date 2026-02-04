@@ -84,7 +84,7 @@ const Philosophy: React.FC = () => {
                 <Handshake size={220} className="text-green-600" />
              </div>
 
-             <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8 h-full">
+             <div className="relative z-10 flex flex-col md:flex-row items-start gap-8 h-full">
                 
                 {/* Icon Circle */}
                 <div className="flex-shrink-0">
