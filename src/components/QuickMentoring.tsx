@@ -69,7 +69,7 @@ const QuickMentoring: React.FC = () => {
             {/* Submit Button */}
             <button 
               type="submit"
-              className="w-full py-4 bg-brand-red text-white font-bold text-lg rounded-xl shadow-lg shadow-brand-red/30 hover:bg-red-600 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group"
+              className="w-full py-4 bg-brand-red text-white font-semibold text-lg rounded-xl shadow-lg shadow-brand-red/30 hover:bg-red-600 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group"
             >
               Book a 1:1 Session
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />

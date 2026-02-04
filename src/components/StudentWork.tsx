@@ -107,7 +107,7 @@ const StudentWork: React.FC = () => {
         
         {/* Main Section Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">
             Student Work
           </h2>
           <p className="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">
@@ -135,10 +135,10 @@ const StudentWork: React.FC = () => {
 
           {/* 1. TOP HEADER (Title + Badge) */}
           <div className="text-center mb-8 animate-fade-in">
-            <h3 className="text-3xl font-bold text-slate-900 mb-3">
+            <h3 className="text-3xl font-semibold text-slate-900 mb-3">
               {currentProject.title}
             </h3>
-            <span className={`inline-block px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wide border ${getBadgeColor(currentProject.course)}`}>
+            <span className={`inline-block px-4 py-1.5 rounded-full text-sm font-semibold uppercase tracking-wide border ${getBadgeColor(currentProject.course)}`}>
               {currentProject.course} Level
             </span>
           </div>

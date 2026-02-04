@@ -227,7 +227,7 @@ const Navbar: React.FC = () => {
           {/* Added 'flex-1 justify-center' to center this block in the navbar */}
           <div className="hidden md:flex flex-1 justify-center items-center space-x-10">
             
-            <button onClick={() => handleNavigation('/')} className="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">
+            <button onClick={() => handleNavigation('/')} className="text-sm font-medium text-slate-600 hover:text-brand-azure transition-colors">
               Home
             </button>
 
@@ -257,11 +257,11 @@ const Navbar: React.FC = () => {
             </div>
             {/* ------------------------------------- */}
 
-            <button onClick={() => handleNavigation('/about')} className="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">
+            <button onClick={() => handleNavigation('/about')} className="text-sm font-medium text-slate-600 hover:text-brand-azure transition-colors">
               About Us
             </button>
 
-            <button onClick={() => handleNavigation('/contact')} className="text-sm font-medium text-slate-600 hover:text-brand-blue transition-colors">
+            <button onClick={() => handleNavigation('/contact')} className="text-sm font-medium text-slate-600 hover:text-brand-azure transition-colors">
               Contact Us
             </button>
 
@@ -295,7 +295,7 @@ const Navbar: React.FC = () => {
             <button onClick={() => handleNavigation('/about')} className="text-left px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50">About Us</button>
             <button onClick={() => handleNavigation('/contact')} className="text-left px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50">Contact Us</button>
             <div className="mt-4 space-y-3 pt-4 border-t border-gray-100">
-              <button onClick={() => handleNavigation('/contact')}  className="w-full text-center px-4 py-3 rounded-xl bg-brand-red text-white font-bold shadow-lg shadow-brand-red/30">
+              <button onClick={() => handleNavigation('/contact')}  className="w-full text-center px-4 py-3 rounded-xl bg-brand-red text-white font-semibold shadow-lg shadow-brand-red/30">
                 Apply for Cohort 2026
               </button>
             </div>

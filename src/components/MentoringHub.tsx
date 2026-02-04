@@ -15,7 +15,7 @@ const MentoringHub: React.FC = () => {
           <div className="w-16 h-16 mx-auto bg-brand-yellow/10 rounded-full flex items-center justify-center mb-6 shadow-xl shadow-blue-900/20">
             <MessageCircle className="w-8 h-8 text-yellow-500" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-6">
             Not sure where to start? Let's Talk.
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
@@ -35,7 +35,7 @@ const MentoringHub: React.FC = () => {
             </div>
 
             {/* Content */}
-            <h3 className="text-3xl font-bold text-slate-900 mb-4">
+            <h3 className="text-3xl font-semibold text-slate-900 mb-4">
               Book a 1:1 Session
             </h3>
             <p className="text-slate-600 text-lg mb-8 max-w-lg mx-auto">
@@ -48,7 +48,7 @@ const MentoringHub: React.FC = () => {
               href={bookingLink}
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center text-brand-yellow font-bold text-lg hover:text-yellow-300 transition-colors border-b-2 border-transparent hover:border-yellow-300 pb-1 cursor-pointer"
+              className="inline-flex items-center text-brand-yellow font-semibold text-lg hover:text-yellow-300 transition-colors border-b-2 border-transparent hover:border-yellow-300 pb-1 cursor-pointer"
             >
               Schedule Free Call
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />

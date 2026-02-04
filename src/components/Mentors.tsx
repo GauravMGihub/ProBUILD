@@ -67,11 +67,11 @@ const Mentors: React.FC = () => {
               </div>
 
               {/* --- MENTOR DETAILS --- */}
-              <h3 className="text-2xl font-bold text-slate-700 mb-1">
+              <h3 className="text-2xl font-semibold text-slate-700 mb-1">
                 {mentor.name}
               </h3>
               
-              <div className="text-yellow-400 font-bold uppercase tracking-wide text-sm mb-4">
+              <div className="text-yellow-400 font-semibold uppercase tracking-wide text-sm mb-4">
                 {mentor.company}
               </div>
 

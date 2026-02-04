@@ -34,10 +34,10 @@ const CadPathway: React.FC = () => {
       
       {/* --- PAGE HEADER --- */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
+        <h1 className="text-5xl md:text-6xl font-semibold text-slate-900 mb-6 tracking-tight">
           Choose Your Pathway
         </h1>
-        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
           ProBUILD offers specialized tracks to help you master the skills demanded by top industries.
           Select a pathway below to view the curriculum.
         </p>
@@ -50,7 +50,7 @@ const CadPathway: React.FC = () => {
           {/* 1. ENGINEERING TAB */}
           <button
             onClick={() => setActivePathway('engineering')}
-            className={`flex-1 flex items-center justify-center py-4 px-6 rounded-xl text-sm font-bold uppercase tracking-wide transition-all duration-300 ${
+            className={`flex-1 flex items-center justify-center py-4 px-6 rounded-xl text-sm font-semibold uppercase tracking-wide transition-all duration-300 ${
               activePathway === 'engineering'
                 ? 'bg-white text-brand-yellow shadow-lg scale-100'
                 : 'text-slate-500 hover:text-slate-700 hover:bg-slate-200'
@@ -63,7 +63,7 @@ const CadPathway: React.FC = () => {
           {/* 2. DESIGN TAB */}
           <button
             onClick={() => setActivePathway('design')}
-            className={`flex-1 flex items-center justify-center py-4 px-6 rounded-xl text-sm font-bold uppercase tracking-wide transition-all duration-300 ${
+            className={`flex-1 flex items-center justify-center py-4 px-6 rounded-xl text-sm font-semibold uppercase tracking-wide transition-all duration-300 ${
               activePathway === 'design'
                 ? 'bg-white text-brand-red shadow-lg scale-100'
                 : 'text-slate-500 hover:text-slate-700 hover:bg-slate-200'
@@ -76,7 +76,7 @@ const CadPathway: React.FC = () => {
           {/* 3. BUSINESS TAB */}
           <button
             onClick={() => setActivePathway('business')}
-            className={`flex-1 flex items-center justify-center py-4 px-6 rounded-xl text-sm font-bold uppercase tracking-wide transition-all duration-300 ${
+            className={`flex-1 flex items-center justify-center py-4 px-6 rounded-xl text-sm font-semibold uppercase tracking-wide transition-all duration-300 ${
               activePathway === 'business'
                 ? 'bg-white text-brand-azure shadow-lg scale-100'
                 : 'text-slate-500 hover:text-slate-700 hover:bg-slate-200'
@@ -109,7 +109,7 @@ const CadPathway: React.FC = () => {
             <div className="w-20 h-20 bg-red-50 text-brand-red rounded-full flex items-center justify-center mx-auto mb-6">
               <Lock className="w-10 h-10" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Design Pathway Coming Soon</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 mb-4">Design Pathway Coming Soon</h2>
             <p className="text-slate-500 max-w-lg mx-auto">
               We are currently building the curriculum for UI/UX, Industrial Design, and Product Rendering. 
               Join the waitlist to be notified when this track opens.
@@ -125,7 +125,7 @@ const CadPathway: React.FC = () => {
             <div className="w-20 h-20 bg-sky-50 text-brand-azure rounded-full flex items-center justify-center mx-auto mb-6">
               <Lock className="w-10 h-10" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Business Pathway Coming Soon</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 mb-4">Business Pathway Coming Soon</h2>
             <p className="text-slate-500 max-w-lg mx-auto">
               Learn Product Management, Tech Sales, and Engineering Leadership. 
               This module is currently under development by our industry partners.

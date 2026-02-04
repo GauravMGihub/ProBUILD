@@ -242,7 +242,7 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => {
               e.stopPropagation();
               setIsExpanded(true);
             }}
-            className="flex items-center mx-auto text-xs text-brand-azure font-bold uppercase tracking-widest hover:underline"
+            className="flex items-center mx-auto text-xs text-black font-semibold uppercase tracking-widest hover:underline"
            >
              View Details <ChevronDown className="w-4 h-4 ml-1" />
            </button>
@@ -259,7 +259,7 @@ const ProgramShowcase: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">
             Our Programs
           </h2>
           <p className="mt-4 text-lg text-slate-500">Choose the path that fits your career goals.</p>

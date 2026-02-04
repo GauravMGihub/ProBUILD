@@ -57,7 +57,7 @@ const ContactUs: React.FC = () => {
         
         <div className="text-center mb-16">
           <h2 className="text-brand-azure font-bold tracking-wide uppercase text-sm mb-3">Get in Touch</h2>
-          <h3 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h3 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">
             We'd love to hear from you.
           </h3>
           <p className="text-lg text-slate-500 mt-4 max-w-2xl mx-auto">
@@ -73,7 +73,7 @@ const ContactUs: React.FC = () => {
             <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
             
             <div>
-              <h4 className="text-2xl font-bold mb-8">Contact Information</h4>
+              <h4 className="text-2xl font-semibold mb-8">Contact Information</h4>
               
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
@@ -87,7 +87,7 @@ const ContactUs: React.FC = () => {
                       href="https://mail.google.com/mail/?view=cm&fs=1&to=probuild.vet@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-lg font-bold hover:text-blue-200 transition-colors"
+                      className="text-lg font-semibold hover:text-blue-200 transition-colors"
                     >
                       probuild.vet@gmail.com
                     </a>
@@ -100,7 +100,7 @@ const ContactUs: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-blue-100 text-sm font-medium mb-1">Call Us</p>
-                    <p className="text-lg font-bold">+91 9822959007</p>
+                    <p className="text-lg font-semibold">+91 9822959007</p>
                   </div>
                 </div>
 
@@ -110,7 +110,7 @@ const ContactUs: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-blue-100 text-sm font-medium mb-1">Visit Us</p>
-                    <p className="text-lg font-bold leading-tight">
+                    <p className="text-lg font-semibold leading-tight">
                       8, Ashaniketan lane No.11,<br/>Krishna Colony,<br/>Kothrud, Pune - 411038,<br/> India
                     </p>
                   </div>
@@ -140,7 +140,7 @@ const ContactUs: React.FC = () => {
                 <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6">
                   <CheckCircle className="w-10 h-10 text-green-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Message Sent!</h3>
+                <h3 className="text-2xl font-semibold text-slate-900 mb-2">Message Sent!</h3>
                 <p className="text-slate-500">We will get back to you within 24 hours.</p>
               </div>
             ) : (
@@ -149,7 +149,7 @@ const ContactUs: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Name */}
                   <div>
-                    <label className="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">Full Name</label>
                     <input 
                       type="text" 
                       name="name"
@@ -162,7 +162,7 @@ const ContactUs: React.FC = () => {
                   </div>
                   {/* Email */}
                   <div>
-                    <label className="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
                     <input 
                       type="email" 
                       name="email"
@@ -177,7 +177,7 @@ const ContactUs: React.FC = () => {
 
                 {/* Subject */}
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">Subject</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">Subject</label>
                   <select 
                     name="subject"
                     value={formData.subject}
@@ -193,7 +193,7 @@ const ContactUs: React.FC = () => {
 
                 {/* Message */}
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">Message</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">Message</label>
                   <textarea 
                     name="message"
                     required
@@ -208,7 +208,7 @@ const ContactUs: React.FC = () => {
                 {/* Submit Button */}
                 <button 
                   type="submit"
-                  className="w-full py-4 bg-slate-900 text-white font-bold rounded-xl shadow-lg hover:bg-slate-800 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+                  className="w-full py-4 bg-slate-900 text-white font-semibold rounded-xl shadow-lg hover:bg-slate-800 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   <Send className="w-5 h-5" />
                   Send Message

@@ -17,11 +17,11 @@ const AboutComingSoon: React.FC = () => {
         {/* Floating Badge */}
         <div className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-slate-100 shadow-md mb-8 animate-bounce" style={{ animationDuration: '3s' }}>
           <Sparkles className="w-4 h-4 text-yellow-500 mr-2" />
-          <span className="text-sm font-bold text-slate-600 uppercase tracking-wider">Work in Progress</span>
+          <span className="text-sm font-semibold text-slate-600 uppercase tracking-wider">Work in Progress</span>
         </div>
 
         {/* Headline */}
-        <h2 className="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6">
+        <h2 className="text-5xl md:text-7xl font-semibold text-slate-900 tracking-tight mb-6">
           We're Crafting <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-cyan-500">
             Our Story.
@@ -29,7 +29,7 @@ const AboutComingSoon: React.FC = () => {
         </h2>
 
         {/* Subtitle */}
-        <p className="text-xl text-slate-500 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg text-slate-500 mb-10 max-w-2xl mx-auto leading-relaxed">
           The <strong>About Us</strong> page is currently under construction. We are building a space to share our mission, our values, and the team behind the scenes.
         </p>
 

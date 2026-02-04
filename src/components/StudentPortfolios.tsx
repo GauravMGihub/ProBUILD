@@ -233,7 +233,7 @@ const StudentPortfolios: React.FC = () => {
         
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">
             Student Portfolios
           </h2>
           <p className="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">
@@ -305,7 +305,7 @@ const StudentPortfolios: React.FC = () => {
                     </div>
 
                     {/* Text Content */}
-                    <h3 className="text-2xl font-bold text-white mb-1 leading-tight">
+                    <h3 className="text-2xl font-semibold text-white mb-1 leading-tight">
                       {item.project}
                     </h3>
                     <div className="text-blue-100 font-medium mb-3 text-sm uppercase tracking-wide">
@@ -318,7 +318,7 @@ const StudentPortfolios: React.FC = () => {
                         href={item.link} 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="col-span-3 inline-flex items-center justify-center px-4 py-3 bg-white text-brand-azure font-bold rounded-xl hover:bg-blue-50 transition-colors shadow-md group-hover:shadow-lg text-sm"
+                        className="col-span-3 inline-flex items-center justify-center px-4 py-3 bg-white text-brand-azure font-semibold rounded-xl hover:bg-blue-50 transition-colors shadow-md group-hover:shadow-lg text-sm"
                       >
                         <Github className="w-4 h-4 mr-2" />
                         Repository
@@ -328,7 +328,7 @@ const StudentPortfolios: React.FC = () => {
                         href={item.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="col-span-2 inline-flex items-center justify-center px-4 py-3 bg-brand-azure/50 border border-blue-400/30 text-white font-bold rounded-xl hover:bg-blue-500 hover:border-white/50 transition-colors shadow-md text-sm backdrop-blur-sm"
+                        className="col-span-2 inline-flex items-center justify-center px-4 py-3 bg-brand-azure/50 border border-blue-400/30 text-white font-semibold rounded-xl hover:bg-blue-500 hover:border-white/50 transition-colors shadow-md text-sm backdrop-blur-sm"
                       >
                         <Linkedin className="w-4 h-4 mr-2" />
                         Connect

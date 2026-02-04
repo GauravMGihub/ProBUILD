@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
 
           {/* --- RIGHT SECTION: Connect --- */}
           <div>
-            <h4 className="font-bold text-slate-900 mb-4">Connect</h4>
+            <h4 className="font-semibold text-slate-900 mb-4">Connect</h4>
             <div className="flex space-x-4">
               <a 
                 href="https://www.linkedin.com/company/probuildglobal/" 
