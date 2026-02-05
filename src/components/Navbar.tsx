@@ -270,7 +270,7 @@ const Navbar: React.FC = () => {
           {/* 4. CTA BUTTON (Right Side) */}
           <div className="hidden md:flex items-center pl-4">
             <button
-              onClick={() => handleNavigation('/contact')}
+              onClick={() => handleNavigation('/cohort')}
               className="group px-5 py-2 rounded-full bg-brand-red text-white font-semibold text-sm shadow-lg shadow-brand-red/30 hover:shadow-brand-red/50 hover:scale-105 transition-all duration-300 flex items-center gap-2">
               Apply Cohort '26
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -295,7 +295,7 @@ const Navbar: React.FC = () => {
             <button onClick={() => handleNavigation('/about')} className="text-left px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50">About Us</button>
             <button onClick={() => handleNavigation('/contact')} className="text-left px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-blue-50">Contact Us</button>
             <div className="mt-4 space-y-3 pt-4 border-t border-gray-100">
-              <button onClick={() => handleNavigation('/contact')}  className="w-full text-center px-4 py-3 rounded-xl bg-brand-red text-white font-semibold shadow-lg shadow-brand-red/30">
+              <button onClick={() => handleNavigation('/cohort')}  className="w-full text-center px-4 py-3 rounded-xl bg-brand-red text-white font-semibold shadow-lg shadow-brand-red/30">
                 Apply for Cohort 2026
               </button>
             </div>

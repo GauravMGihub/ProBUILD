@@ -51,6 +51,7 @@ import Home from './components/Home';
 import AboutUs from './components/AboutUs';       
 import Pathway from './components/Pathway'; 
 import ContactUs from './components/ContactUs';
+import CohortPage from './components/CohortPage';
 
 
 const App: React.FC = () => {
@@ -74,12 +75,14 @@ const App: React.FC = () => {
             {/* If URL is "/pathway", show Pathway */}
             <Route path="/cad-pathway" element={<Pathway />} />
 
-            <Route path="/contact" element={<ContactUs />} /> 
+            <Route path="/contact" element={<ContactUs />} />
+
+            {/* If URL is "/cohort", show CohortPage */}
+            <Route path="/cohort" element={<CohortPage />} />
           </Routes>
         </main>
 
         <Footer />
-        <WhatsAppButton /> 
         <ScrollToTopButton />
         
       </div>

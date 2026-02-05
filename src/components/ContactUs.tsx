@@ -1,51 +1,38 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Phone, Send, CheckCircle, Instagram, Linkedin } from 'lucide-react';
-import emailjs from '@emailjs/browser';
+import { Send } from 'lucide-react';
 
 const ContactUs: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     subject: '',
     message: ''
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Replace these strings with your actual keys from EmailJS
-    const serviceID = 'service_3n9heeg';
-    const templateID = 'template_xce2eld';
-    const publicKey = 'XAGZuH7muBZD_ZSqg';
-
-    // Create a temporary object to match EmailJS template variables
-    const templateParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      subject: formData.subject,
-      message: formData.message,
-    };
-
-    emailjs.send(serviceID, templateID, templateParams, publicKey)
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setIsSubmitted(true);
-        setFormData({ name: '', email: '', subject: '', message: '' });
-        setTimeout(() => setIsSubmitted(false), 5000);
-      })
-      .catch((err) => {
-        console.log('FAILED...', err);
-        alert("Failed to send message. Please try again.");
-      });
+    // Build the mailto link with form data
+    const email = 'probuild.vet@gmail.com';
+    const subjectText = formData.subject === 'course' ? 'Course Inquiry' 
+                      : formData.subject === 'partnership' ? 'Partnership'
+                      : formData.subject === 'general' ? 'General Question'
+                      : 'Contact Form Message';
+    
+    const body = `Hi ProBUILD Team,\n\nName: ${formData.name}\n\nMessage:\n${formData.message}\n\nBest regards,\n${formData.name}`;
+    
+    // Encode for URL
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(body)}`;
+    
+    // Open the user's email client
+    window.location.href = mailtoLink;
   };
 
   return (
-    <section id="contact" className="pt-24 md:pt-32 pb-16 md:pb-24 bg-brand-cream relative overflow-hidden">
+    <section id="contact" className="py-4 md:py-6 pb-16 md:pb-24 bg-brand-cream relative overflow-hidden">
       
       {/* Decorative Blob */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
@@ -53,10 +40,9 @@ const ContactUs: React.FC = () => {
         <div className="absolute bottom-[-10%] left-[-5%] w-96 h-96 bg-yellow-100 rounded-full blur-3xl opacity-50"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="text-center mb-16">
-          <h2 className="text-brand-azure font-bold tracking-wide uppercase text-sm mb-3">Get in Touch</h2>
+        <div className="text-center mb-12">
           <h3 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">
             We'd love to hear from you.
           </h3>
@@ -65,160 +51,68 @@ const ContactUs: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        {/* --- THE FORM (Full Width) --- */}
+        <div className="bg-brand-cream rounded-3xl p-8 md:p-10 shadow-xl border border-yellow-100">
           
-          {/* --- LEFT COLUMN: INFO CARD --- */}
-          <div className="lg:col-span-1 bg-brand-azure rounded-3xl p-10 text-white flex flex-col justify-between shadow-xl relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
+          <form onSubmit={handleSubmit} className="space-y-6">
             
+            {/* Name - Full Width */}
             <div>
-              <h4 className="text-2xl font-semibold mb-8">Contact Information</h4>
-              
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-blue-100 text-sm font-medium mb-1">Email Us</p>
-                    <a 
-                      //href="mailto:probuild.vet@gmail.com"
-                      href="https://mail.google.com/mail/?view=cm&fs=1&to=probuild.vet@gmail.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-lg font-semibold hover:text-blue-200 transition-colors"
-                    >
-                      probuild.vet@gmail.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-blue-100 text-sm font-medium mb-1">Call Us</p>
-                    <p className="text-lg font-semibold">+91 9822959007</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-blue-100 text-sm font-medium mb-1">Visit Us</p>
-                    <p className="text-lg font-semibold leading-tight">
-                      8, Ashaniketan lane No.11,<br/>Krishna Colony,<br/>Kothrud, Pune - 411038,<br/> India
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <label className="block text-sm font-semibold text-slate-700 mb-2">Full Name</label>
+              <input 
+                type="text" 
+                name="name"
+                required
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 focus:bg-white"
+                placeholder="John Doe"
+              />
             </div>
 
-            {/* Socials can go here */}
-            <div className="mt-12 pt-8 border-t border-white/20">
-               <p className="text-blue-100 text-sm mb-4">Follow us on social media</p>
-               <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company/probuildglobal/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-azure hover:text-white transition-colors">
-                <Linkedin size={18} />
-              </a>
-              <a href="https://www.instagram.com/probuild.in?igsh=YnN4cHdyODBuNzc2" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-red hover:text-white transition-colors">
-                <Instagram size={18} />
-              </a>
+            {/* Subject */}
+            <div>
+              <label className="block text-sm font-semibold text-slate-700 mb-2">Subject</label>
+              <select 
+                name="subject"
+                required
+                value={formData.subject}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 focus:bg-white"
+              >
+                <option value="" disabled>Select a topic</option>
+                <option value="course">Course Inquiry</option>
+                <option value="partnership">Partnership</option>
+                <option value="general">General Question</option>
+              </select>
             </div>
+
+            {/* Message */}
+            <div>
+              <label className="block text-sm font-semibold text-slate-700 mb-2">Message</label>
+              <textarea 
+                name="message"
+                required
+                rows={5}
+                value={formData.message}
+                onChange={handleChange}
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 focus:bg-white resize-none"
+                placeholder="How can we help you?"
+              ></textarea>
             </div>
-          </div>
 
-          {/* --- RIGHT COLUMN: THE FORM --- */}
-          <div className="lg:col-span-2 bg-brand-cream rounded-3xl p-8 md:p-10 shadow-xl border border-yellow-100">
-            
-            {isSubmitted ? (
-              <div className="h-full flex flex-col items-center justify-center text-center animate-fade-in py-20">
-                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                  <CheckCircle className="w-10 h-10 text-green-600" />
-                </div>
-                <h3 className="text-2xl font-semibold text-slate-900 mb-2">Message Sent!</h3>
-                <p className="text-slate-500">We will get back to you within 24 hours.</p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {/* Name */}
-                  <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-2">Full Name</label>
-                    <input 
-                      type="text" 
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200  focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 focus:bg-white"
-                      placeholder="John Doe"
-                    />
-                  </div>
-                  {/* Email */}
-                  <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
-                    <input 
-                      type="email" 
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 focus:bg-white"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-                </div>
+            {/* Submit Button */}
+            <button 
+              type="submit"
+              className="w-full py-4 bg-slate-900 text-white font-semibold rounded-xl shadow-lg hover:bg-slate-800 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+            >
+              <Send className="w-5 h-5" />
+              Send Message
+            </button>
 
-                {/* Subject */}
-                <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Subject</label>
-                  <select 
-                    name="subject"
-                    value={formData.subject}
-                    onChange={(e: any) => handleChange(e)}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 focus:bg-white"
-                  >
-                    <option value="" disabled>Select a topic</option>
-                    <option value="course">Course Inquiry</option>
-                    <option value="partnership">Partnership</option>
-                    <option value="general">General Question</option>
-                  </select>
-                </div>
-
-                {/* Message */}
-                <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-2">Message</label>
-                  <textarea 
-                    name="message"
-                    required
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-slate-50 focus:bg-white resize-none"
-                    placeholder="How can we help you?"
-                  ></textarea>
-                </div>
-
-                {/* Submit Button */}
-                <button 
-                  type="submit"
-                  className="w-full py-4 bg-slate-900 text-white font-semibold rounded-xl shadow-lg hover:bg-slate-800 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
-                >
-                  <Send className="w-5 h-5" />
-                  Send Message
-                </button>
-
-              </form>
-            )}
-          </div>
-
+          </form>
         </div>
+
       </div>
     </section>
   );

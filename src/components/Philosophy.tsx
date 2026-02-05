@@ -6,7 +6,6 @@ const Philosophy: React.FC = () => {
     <section id="philosophy" className="py-20 bg-brand-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-brand-azure font-bold tracking-wide uppercase text-sm mb-3">Our Philosophy</h2>
           <h3 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight">Why ProBUILD works.</h3>
         </div>
 
