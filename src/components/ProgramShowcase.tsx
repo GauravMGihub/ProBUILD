@@ -32,7 +32,7 @@ const programs: Program[] = [
     highlight: "Foundation",
     highlightColor: "text-yellow-500",
     suffix: "Nano Degree",
-    image: "/images/image1.jpg",
+    image: "/images/Foundation.png",
     badge: "Admissions Open",
     badgeColor: "bg-green-500",
     description: "Master open-source parametric modeling. This course creates the bedrock for Diploma Level I. Built for students who want to move beyond theory.",
@@ -42,7 +42,7 @@ const programs: Program[] = [
     prereq1: "No prerequisites required",
     prereq2: "Open to all backgrounds",
     brochureLink: "/brochures/Foundations.pdf",
-    enrollLink: "https://forms.gle/Hua2suU1dw2Xfj6d9",
+    enrollLink: "https://forms.gle/2c8qh9YyD3mA9L228",
     isOpen: true
   },
   {
@@ -52,7 +52,7 @@ const programs: Program[] = [
     highlight: "Intermediate",
     highlightColor: "text-brand-red",
     suffix: "Nano Degree",
-    image: "/images/image2.jpg",
+    image: "/images/Intermediate.png",
     badge: "Admissions Open",
     badgeColor: "bg-green-500",
     description: "Take your skills to the professional level. Focus on complex assembly simulations, FEA analysis, and Python scripting for automation.",
@@ -62,17 +62,17 @@ const programs: Program[] = [
     prereq1: "Foundation Degree",
     prereq2: "Basic Physics/Math",
     brochureLink: "/brochures/Intermediate.pdf",
-    enrollLink: "https://forms.gle/3VP7YvHvKBQMAjrE7",
+    enrollLink: "https://forms.gle/5VVKpNXb8tMDFP9d6",
     isOpen: true
   },
   {
     id: 3,
     category: "SPECIALIZED MODULE",
-    title: "Gmesh",
+    title: "Gmsh",
     highlight: "Meshing",
     highlightColor: "text-brand-azure",
     suffix: "Expert",
-    image: "/images/image3.jpg",
+    image: "/images/Gmsh.png",
     badge: "Admissions Closed",
     badgeColor: "bg-red-500",
     description: "Deep dive into high-quality mesh generation for CFD and FEA. Learn parametric scripting for automated mesh workflows.",
@@ -92,7 +92,7 @@ const programs: Program[] = [
     highlight: "Multiphysics",
     highlightColor: "text-green-600",
     suffix: "Solver",
-    image: "/images/image4.jpg",
+    image: "/images/Elmer.png",
     badge: "Admissions Closed",
     badgeColor: "bg-red-500",
     description: "Master open-source multiphysics simulation. Solve complex fluid-structure interactions and electromagnetic problems.",
@@ -121,11 +121,11 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => {
         className="cursor-pointer group"
       >
         {/* Image Section */}
-        <div className="relative h-64 bg-slate-200">
+        <div className="relative h-64 overflow-hidden">
           <img 
             src={program.image} 
             alt={program.title} 
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
           />
           <div className={`absolute top-4 left-4 ${program.badgeColor} text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide shadow-md`}>
             {program.badge}
