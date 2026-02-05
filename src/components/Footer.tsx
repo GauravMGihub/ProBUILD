@@ -110,6 +110,38 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
+          {/* --- MIDDLE SECTION: Quick Links --- */}
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-sm text-slate-600">
+              <li>
+                <Link to="/" className="hover:text-brand-blue transition-colors">Home</Link>
+              </li>
+              <li>
+                <Link to="/cad-pathway" className="hover:text-brand-blue transition-colors">CAD Pathway</Link>
+              </li>
+              <li>
+                <Link to="/about" className="hover:text-brand-blue transition-colors">About Us</Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-brand-blue transition-colors">Contact Us</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* --- MIDDLE SECTION: Explore --- */}
+          <div>
+            <h4 className="font-semibold text-slate-900 mb-4">Explore</h4>
+            <ul className="space-y-2 text-sm text-slate-600">
+              <li>
+                <a href="/#philosophy" className="hover:text-brand-blue transition-colors">Our Philosophy</a>
+              </li>
+              <li>
+                <a href="/#roadmap" className="hover:text-brand-blue transition-colors">Learning Roadmap</a>
+              </li>
+            </ul>
+          </div>
+
           {/* --- RIGHT SECTION: Connect --- */}
           <div>
             <h4 className="font-semibold text-slate-900 mb-4">Connect</h4>
