@@ -203,6 +203,7 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => {
                   href={program.enrollLink}
                   target="_blank" 
                   rel="noopener noreferrer"
+                  onClick={(e) => { e.preventDefault(); window.open(program.enrollLink, '_blank'); }}
                   className="flex items-center justify-center px-4 py-3 bg-brand-azure text-white font-bold rounded-lg hover:bg-blue-600 transition-colors shadow-lg shadow-blue-400/30 cursor-pointer"
                 >
                   Enroll Now
