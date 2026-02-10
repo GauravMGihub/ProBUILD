@@ -79,7 +79,7 @@ const CohortPage: React.FC = () => {
                   href={cohort.formLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={(e) => { e.preventDefault(); window.open(cohort.formLink, '_blank'); }}
+                  onClick={(e) => { const w = window.open(cohort.formLink, '_blank', 'noopener,noreferrer'); if (w) e.preventDefault(); }}
                   className="w-full flex items-center justify-center px-6 py-3.5 bg-brand-red text-white font-bold rounded-xl hover:bg-red-600 transition-all duration-300 shadow-lg shadow-red-400/30 group-hover:shadow-xl group-hover:shadow-red-400/40"
                 >
                   Apply Now
