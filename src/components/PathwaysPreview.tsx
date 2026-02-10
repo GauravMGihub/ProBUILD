@@ -67,7 +67,7 @@ const PathwaysPreview: React.FC = () => {
 
               {/* Title & Description */}
               <div className="relative z-10 mb-6">
-                <div className={`w-12 h-1 bg-gradient-to-r from-transparent to-${path.color.replace('bg-', '')} mb-4`}></div>
+
                 {/* Changed text-white to text-slate-900 */}
                 <h4 className="text-2xl font-semibold text-slate-900 mb-3">{path.title}</h4>
                 {/* Changed text-slate-400 to text-slate-600 */}
