@@ -1,26 +1,39 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, Zap, Layout, Users } from 'lucide-react';
+import { CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react';
 
-// 1. DEFINE IMAGES FOR THE SLIDESHOW
+// Local student/project images for the carousel
 const heroImages = [
-  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80", 
-  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80", 
-  "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"  
+  
+  "/images/image3.jpg",
+  "/images/image4.jpg",
+  "/images/image5.jpg",
+  "/images/image6.jpg",
+  "/images/image7.jpg",
+  "/images/image8.jpg",
 ];
 
 const Hero: React.FC = () => {
-  // 2. STATE TO TRACK CURRENT IMAGE
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [resetKey, setResetKey] = useState(0);
 
-  // 3. TIMER LOGIC (Change image every 4 seconds)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
+  const nextImage = useCallback(() => {
+    setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
   }, []);
+
+  const prevImage = useCallback(() => {
+    setCurrentImageIndex((prev) => (prev - 1 + heroImages.length) % heroImages.length);
+  }, []);
+
+  const handleNext = () => { nextImage(); setResetKey((k) => k + 1); };
+  const handlePrev = () => { prevImage(); setResetKey((k) => k + 1); };
+  const handleDot = (idx: number) => { setCurrentImageIndex(idx); setResetKey((k) => k + 1); };
+
+  // Auto-rotate every 4 seconds — resets when user manually navigates
+  useEffect(() => {
+    const interval = setInterval(nextImage, 4000);
+    return () => clearInterval(interval);
+  }, [nextImage, resetKey]);
 
   return (
     <div className="relative overflow-hidden bg-brand-cream pt-10 pb-20 sm:pt-16 sm:pb-24">
@@ -62,28 +75,58 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Visual */}
+          {/* Right Column: Image Carousel */}
           <div className="lg:col-span-6 mt-16 lg:mt-0 relative">
              {/* Abstract Shapes */}
              <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-brand-yellow/10 rounded-full blur-3xl"></div>
              <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-brand-blue/10 rounded-full blur-3xl"></div>
 
-             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500 aspect-[4/3]">
-                {/* 
-                    UPDATED IMAGE TAG 
-                    - Uses currentImageIndex to swap images
-                    - Added transition classes for smoothness
-                */}
-                <img 
-                    src={heroImages[currentImageIndex]} 
-                    alt="Students collaborating on robotics" 
-                    className="w-full h-full object-cover transition-opacity duration-500"
-                />
+             {/* Carousel Container — no tilt */}
+             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
+                
+                {/* Images */}
+                {heroImages.map((img, idx) => (
+                  <img 
+                    key={idx}
+                    src={img} 
+                    alt={`Student glimpse ${idx + 1}`} 
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${idx === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
+                  />
+                ))}
+
+                {/* Left Arrow */}
+                <button
+                  onClick={handlePrev}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 z-20 p-2 bg-white/80 backdrop-blur-sm text-slate-800 rounded-full shadow-lg hover:bg-white hover:scale-110 transition-all"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+
+                {/* Right Arrow */}
+                <button
+                  onClick={handleNext}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 z-20 p-2 bg-white/80 backdrop-blur-sm text-slate-800 rounded-full shadow-lg hover:bg-white hover:scale-110 transition-all"
+                  aria-label="Next image"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+
+                {/* Dot Indicators */}
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-1.5">
+                  {heroImages.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => handleDot(idx)}
+                      className={`rounded-full transition-all duration-300 ${idx === currentImageIndex ? 'w-5 h-2 bg-white' : 'w-2 h-2 bg-white/50'}`}
+                      aria-label={`Go to image ${idx + 1}`}
+                    />
+                  ))}
+                </div>
              </div>
           </div>
         </div>
       </div>
-
     </div>
   );
 };

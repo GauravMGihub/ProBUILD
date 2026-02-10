@@ -6,7 +6,7 @@ const portfolioData = [
   {
     role: "CAD Design Intern",
     project: "Pranoti Kulkarni",
-    link: "#",
+    link: "https://github.com/pranoti1505",
     linkedin: "https://www.linkedin.com/in/pranoti-kulkarni-50533729a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     image: "/images/mentors/Pranoti_Kulkarni.png"
   },
