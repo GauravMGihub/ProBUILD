@@ -21,38 +21,14 @@ const AboutComingSoon: React.FC = () => {
         </div>
 
         {/* Headline */}
-        <h2 className="text-5xl md:text-7xl font-semibold text-slate-900 tracking-tight mb-6">
-          We're Crafting <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-cyan-500">
-            Our Story.
-          </span>
+        <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-6">
+          Under Construction <br />
         </h2>
 
         {/* Subtitle */}
         <p className="text-lg text-slate-500 mb-10 max-w-2xl mx-auto leading-relaxed">
           The <strong>About Us</strong> page is currently under construction. We are building a space to share our mission, our values, and the team behind the scenes.
         </p>
-
-        {/* Notify Form */}
-        <div className="max-w-md mx-auto relative group">
-          {/* Glow effect behind the form */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-          
-          <div className="relative flex bg-white p-2 rounded-2xl shadow-xl border border-slate-100">
-            <input 
-              type="email" 
-              placeholder="Enter your email for updates..." 
-              className="flex-1 px-4 py-3 bg-transparent text-slate-900 placeholder-slate-400 focus:outline-none"
-            />
-            <button className="flex items-center justify-center px-6 py-3 bg-slate-900 text-white font-bold rounded-xl hover:bg-blue-600 transition-all duration-300 shadow-lg">
-              Notify Me
-            </button>
-          </div>
-          <p className="mt-4 text-xs text-slate-400 font-medium uppercase tracking-wide">
-            No spam. Unsubscribe anytime.
-          </p>
-        </div>
-
       </div>
     </section>
   );

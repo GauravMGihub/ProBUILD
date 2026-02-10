@@ -25,7 +25,7 @@ const cohorts = [
 
 const CohortPage: React.FC = () => {
   return (
-    <section className="min-h-screen bg-brand-cream py-4 md:py-6">
+    <section className="min-h-screen bg-brand-cream py-4 md:py-8">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

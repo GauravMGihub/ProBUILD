@@ -6,7 +6,7 @@ import AboutComingSoon from './AboutComingSoon';
 const AboutUs: React.FC = () => {
   return (
     
-    <div className="pt-24 bg-brand-cream min-h-screen">
+    <div className="pt-4 bg-brand-cream min-h-screen">
       <AboutComingSoon />
       {/* =========================================
           1. HERO HEADER

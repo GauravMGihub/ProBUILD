@@ -185,14 +185,14 @@ const StudentPortfolios: React.FC = () => {
                     </div>
 
                     {/* Buttons */}
-                    <div className="mt-auto grid grid-cols-5 gap-3">
+                    <div className="mt-auto flex gap-3">
                       <a 
                         href={item.link} 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="col-span-3 inline-flex items-center justify-center px-4 py-3 bg-white text-brand-azure font-semibold rounded-xl hover:bg-blue-50 transition-colors shadow-md group-hover:shadow-lg text-sm"
+                        className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-white text-brand-azure font-semibold rounded-xl hover:bg-blue-50 transition-colors shadow-md group-hover:shadow-lg text-sm"
                       >
-                        <Github className="w-4 h-4 mr-2" />
+                        <Github className="w-4 h-4 mr-2 flex-shrink-0" />
                         Repository
                       </a>
 
@@ -200,9 +200,9 @@ const StudentPortfolios: React.FC = () => {
                         href={item.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="col-span-2 inline-flex items-center justify-center px-4 py-3 bg-brand-azure/50 border border-blue-400/30 text-white font-semibold rounded-xl hover:bg-blue-500 hover:border-white/50 transition-colors shadow-md text-sm backdrop-blur-sm"
+                        className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-brand-azure/50 border border-blue-400/30 text-white font-semibold rounded-xl hover:bg-blue-500 hover:border-white/50 transition-colors shadow-md text-sm backdrop-blur-sm"
                       >
-                        <Linkedin className="w-4 h-4 mr-2" />
+                        <Linkedin className="w-4 h-4 mr-2 flex-shrink-0" />
                         Connect
                       </a>
                     </div>

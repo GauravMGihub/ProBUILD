@@ -13,7 +13,7 @@ const projects = [
     model: "/models/DG_Assembly_Rehan-Assembly.gltf", // Ensure .glb
     // description: "This student utilized FreeCAD to design a fully functional gearbox simulation. By integrating Python scripts, they automated the stress testing scenarios.",
     // tech: ["Built with FreeCAD & Python", "Completed in 4 Weeks"],
-    repo: "https://github.com/QuirkyCort/gears"
+    repo: "#"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const projects = [
     model: "/models/elbow_pipe_template-Body.gltf",
     // description: "A comprehensive digital twin project that mimics a real-world assembly line. The project demonstrates real-time data synchronization.",
     // tech: ["IoT Integration", "Real-time Data Visualization"],
-    repo: "https://github.com/QuirkyCort/gears"
+    repo: "#"
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const projects = [
     model: "/models/DG_RearCover_Rehan-Body.gltf",
     // description: "A parametric drone frame design that automatically adjusts dimensions based on payload weight inputs.",
     // tech: ["IoT Integration", "Real-time Data Visualization"],
-    repo: "https://github.com/QuirkyCort/gears"
+    repo: "#"
   }
 ];
 
@@ -102,7 +102,7 @@ const StudentWork: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-brand-cream">
+    <section id="student-work" className="py-20 bg-brand-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Section Heading */}
@@ -194,7 +194,7 @@ const StudentWork: React.FC = () => {
               </div>
 
               <a 
-                href={currentProject.repo} 
+                // href={currentProject.repo} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex justify-center items-center px-6 py-3 bg-slate-900 text-white text-sm font-semibold rounded-xl hover:bg-slate-700 transition-all duration-300 shadow-md group"

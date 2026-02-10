@@ -44,9 +44,9 @@ const Hero: React.FC = () => {
             </p>
           
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="px-8 py-4 rounded-2xl bg-brand-red text-white font-bold text-lg shadow-xl shadow-brand-red/20 hover:bg-red-600 hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300">
+              <a href="/cad-pathway" className="px-8 py-4 rounded-2xl bg-brand-red text-white font-bold text-lg shadow-xl shadow-brand-red/20 hover:bg-red-600 hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 inline-block">
                 Start Your Journey
-              </button>
+              </a>
             </div>
 
             <div className="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-slate-500 font-medium">

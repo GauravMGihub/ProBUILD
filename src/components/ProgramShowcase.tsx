@@ -191,7 +191,7 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => {
             {program.isOpen ? (
               <>
                 <a 
-                  href={program.brochureLink} 
+                  // href={program.brochureLink} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center justify-center px-4 py-3 border border-slate-200 text-slate-700 font-semibold rounded-lg hover:bg-brand-cream transition-colors cursor-pointer"
@@ -255,7 +255,7 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => {
 // --- 4. MAIN SHOWCASE COMPONENT ---
 const ProgramShowcase: React.FC = () => {
   return (
-    <section className="py-20 bg-brand-cream">
+    <section className="py-8 bg-brand-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-12">

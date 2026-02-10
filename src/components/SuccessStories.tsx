@@ -1,30 +1,24 @@
 import React from 'react';
-import { Building2, Quote } from 'lucide-react'; // Changed Briefcase to Quote
+import { Building2, Quote, Linkedin } from 'lucide-react';
 
 const students = [
   {
     name: "Rehan Nadaf",
     image: "/images/students/Rehan_Nadaf.png",
-    // companyName: "Tesla",
-    // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png",
     role: "CAD Design Intern",
-    // description: "Designed parametric battery casing components using CATIA. Reduced tolerance errors by 15%."
+    linkedin: "https://www.linkedin.com/in/rehan-nadaf?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
     name: "Anish Patil",
     image: "/images/students/Anish_Patil.png",
-    // companyName: "Siemens",
-    // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg",
     role: "CAD Design Intern",
-    // description: "Built a functional digital twin of the assembly line to predict maintenance cycles using Python."
+    linkedin: "https://www.linkedin.com/in/anish-patil-kodarkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
     name: "Pranoti Kulkarni",
     image: "/images/mentors/Pranoti_Kulkarni.png",
-    // companyName: "Tata Motors",
-    // companyLogo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg",
     role: "CAD Design Intern",
-    // description: "Automated the chassis stress-testing workflow, cutting simulation time from 2 days to 4 hours."
+    linkedin: "https://www.linkedin.com/in/pranoti-kulkarni-50533729a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   }
 ];
 
@@ -93,6 +87,17 @@ const SuccessStories: React.FC = () => {
                   "{student.description}"
                 </p> */}
               </div>
+
+              {/* LinkedIn Connect Button */}
+              <a 
+                href={student.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-brand-azure/100 border border-blue-400/30 text-white font-semibold rounded-xl hover:bg-blue-500 hover:border-white/50 transition-colors shadow-md text-sm backdrop-blur-sm"
+              >
+                <Linkedin className="w-4 h-4 mr-2 flex-shrink-0" />
+                Connect
+                                    </a>
 
               <div className="w-12 h-1 bg-slate-200 mt-6 rounded-full"></div>
 

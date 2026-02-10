@@ -30,11 +30,11 @@ const CadPathway: React.FC = () => {
   }, [location]); // Re-run whenever the URL changes
 
   return (
-    <div className="pt-24 bg-brand-cream min-h-screen">
+    <div className="pt-4 bg-brand-cream min-h-screen">
       
       {/* --- PAGE HEADER --- */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
-        <h1 className="text-5xl md:text-6xl font-semibold text-slate-900 mb-6 tracking-tight">
+        <h1 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-6 tracking-tight">
           Choose Your Pathway
         </h1>
         <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
@@ -44,7 +44,7 @@ const CadPathway: React.FC = () => {
       </div>
 
       {/* --- TAB NAVIGATION --- */}
-      <div className="max-w-4xl mx-auto px-4 mb-16">
+      <div className="max-w-4xl mx-auto px-4 mb-6">
         <div className="bg-slate-100 p-2 rounded-2xl flex flex-col md:flex-row gap-2">
           
           {/* 1. ENGINEERING TAB */}

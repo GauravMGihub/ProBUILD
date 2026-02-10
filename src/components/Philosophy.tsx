@@ -28,7 +28,7 @@ const Philosophy: React.FC = () => {
                 </p>
               </div>
               <div className="mt-8">
-                <a href="#" className="inline-flex items-center text-brand-red font-semibold hover:underline">
+                <a href="/cad-pathway#student-work" className="inline-flex items-center text-brand-red font-semibold hover:underline">
                   See Project Gallery <ArrowUpRight className="ml-1 w-4 h-4" />
                 </a>
               </div>
@@ -68,9 +68,9 @@ const Philosophy: React.FC = () => {
                 </p>
              </div>
              <div className="relative z-10 mt-auto">
-                 <button className="w-full py-3 bg-white text-slate-900 font-semibold rounded-xl shadow-sm hover:shadow-md border border-brand-yellow/20 transition-all">
+                 <a href="/cad-pathway#mentors" className="w-full py-3 bg-white text-slate-900 font-semibold rounded-xl shadow-sm hover:shadow-md border border-brand-yellow/20 transition-all block text-center">
                     Meet Mentors
-                 </button>
+                 </a>
              </div>
           </div>
 

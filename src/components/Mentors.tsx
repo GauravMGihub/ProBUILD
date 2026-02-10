@@ -23,7 +23,7 @@ const mentors = [
 const Mentors: React.FC = () => {
   return (
     // 1. SECTION BACKGROUND: Dark Radial Gradient
-    <section className="py-24 bg-brand-cream from-slate-800 via-slate-900 to-black">
+    <section id="mentors" className="py-24 bg-brand-cream from-slate-800 via-slate-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
@@ -84,7 +84,9 @@ const Mentors: React.FC = () => {
               {/* LinkedIn Button */}
               <a
                 href={mentor.linkedin}
-                className="inline-flex items-center text-slate-700 font-semibold hover:text-blue-400 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-brand-azure font-semibold hover:text-blue-400 transition-colors"
               >
                 <Linkedin className="w-5 h-5 mr-2" />
                 View Profile

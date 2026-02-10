@@ -64,7 +64,8 @@ const Footer: React.FC = () => {
                 <Mail className="w-4 h-4 mt-0.5 text-brand-azure flex-shrink-0" />
                 <a 
                   href="mailto:probuild.vet@gmail.com"
-                  className="hover:text-brand-azure transition-colors"
+                  onClick={(e) => { e.preventDefault(); window.open('mailto:probuild.vet@gmail.com', '_blank'); }}
+                  className="hover:text-brand-azure transition-colors cursor-pointer"
                 >
                   probuild.vet@gmail.com
                 </a>
@@ -73,6 +74,8 @@ const Footer: React.FC = () => {
                 <Phone className="w-4 h-4 mt-0.5 text-brand-azure flex-shrink-0" />
                 <a 
                   href="tel:+919822959007"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-brand-azure transition-colors"
                 >
                   +91 9822959007
@@ -103,13 +106,16 @@ const Footer: React.FC = () => {
               </a>
               <a 
                 href="https://www.instagram.com/probuild.in?igsh=YnN4cHdyODBuNzc2" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-red hover:text-white transition-colors"
               >
                 <Instagram size={18} />
               </a>
               <a 
                 href="mailto:probuild.vet@gmail.com"
-                className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-yellow hover:text-white transition-colors"
+                onClick={(e) => { e.preventDefault(); window.open('mailto:probuild.vet@gmail.com', '_blank'); }}
+                className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600 hover:bg-brand-yellow hover:text-white transition-colors cursor-pointer"
               >
                 <Mail size={18} />
               </a>

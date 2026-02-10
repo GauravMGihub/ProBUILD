@@ -27,12 +27,12 @@ const ContactUs: React.FC = () => {
     // Encode for URL
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(body)}`;
     
-    // Open the user's email client
-    window.location.href = mailtoLink;
+    // Open the user's email client in a new tab
+    window.open(mailtoLink, '_blank');
   };
 
   return (
-    <section id="contact" className="py-4 md:py-6 pb-16 md:pb-24 bg-brand-cream relative overflow-hidden">
+    <section id="contact" className="pt-4 md:pt-6 pb-16 md:pb-24 bg-brand-cream relative overflow-hidden">
       
       {/* Decorative Blob */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
