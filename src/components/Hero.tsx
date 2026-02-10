@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { CheckCircle2, Zap, Layout, Users } from 'lucide-react';
 
 // 1. DEFINE IMAGES FOR THE SLIDESHOW
@@ -44,9 +45,9 @@ const Hero: React.FC = () => {
             </p>
           
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="/cad-pathway" className="px-8 py-4 rounded-2xl bg-brand-red text-white font-bold text-lg shadow-xl shadow-brand-red/20 hover:bg-red-600 hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 inline-block">
+              <Link to="/cad-pathway" className="px-8 py-4 rounded-2xl bg-brand-red text-white font-bold text-lg shadow-xl shadow-brand-red/20 hover:bg-red-600 hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 inline-block">
                 Start Your Journey
-              </a>
+              </Link>
             </div>
 
             <div className="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-slate-500 font-medium">

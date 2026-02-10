@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Briefcase, Github, GraduationCap, ArrowUpRight, Handshake } from 'lucide-react';
 
 const Philosophy: React.FC = () => {
@@ -28,9 +29,9 @@ const Philosophy: React.FC = () => {
                 </p>
               </div>
               <div className="mt-8">
-                <a href="/cad-pathway#student-work" className="inline-flex items-center text-brand-red font-semibold hover:underline">
+                <Link to="/cad-pathway#student-work" className="inline-flex items-center text-brand-red font-semibold hover:underline">
                   See Project Gallery <ArrowUpRight className="ml-1 w-4 h-4" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -68,9 +69,9 @@ const Philosophy: React.FC = () => {
                 </p>
              </div>
              <div className="relative z-10 mt-auto">
-                 <a href="/cad-pathway#mentors" className="w-full py-3 bg-white text-slate-900 font-semibold rounded-xl shadow-sm hover:shadow-md border border-brand-yellow/20 transition-all block text-center">
+                 <Link to="/cad-pathway#mentors" className="w-full py-3 bg-white text-slate-900 font-semibold rounded-xl shadow-sm hover:shadow-md border border-brand-yellow/20 transition-all block text-center">
                     Meet Mentors
-                 </a>
+                 </Link>
              </div>
           </div>
 
