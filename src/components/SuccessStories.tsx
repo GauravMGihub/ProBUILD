@@ -97,7 +97,7 @@ const SuccessStories: React.FC = () => {
               >
                 <Linkedin className="w-4 h-4 mr-2 flex-shrink-0" />
                 Connect
-                                    </a>
+              </a>
 
               <div className="w-12 h-1 bg-slate-200 mt-6 rounded-full"></div>
 
