@@ -123,8 +123,7 @@ ProBUILD/
 │   │   ├── StatsBar.tsx           # Statistics bar
 │   │   ├── LifeAtProBuild.tsx     # Life at ProBUILD section
 │   │   ├── ScrollToTop.tsx        # Scroll-to-top on route change
-│   │   ├── ScrollToTopButton.tsx  # Floating scroll-to-top button
-│   │   └── WhatsAppButton.tsx     # Floating WhatsApp button
+│   │   └── ScrollToTopButton.tsx  # Floating scroll-to-top button
 │   │
 │   ├── App.tsx                    # Main application & routing
 │   ├── index.tsx                  # App entry point
