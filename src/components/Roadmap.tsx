@@ -8,8 +8,8 @@ const phases = [
     phase: "PHASE I",
     title: "Learn",
     color: "blue",
-    icon: <BookOpen className="w-8 h-8 text-white" />, // Increased Icon Size
-    image: "/images/sample/Learn.png", // Added Image
+    icon: <BookOpen className="w-8 h-8 text-white" />, 
+    image: "/images/sample/Learn.png", 
     steps: [
       { num: "1", text: "Discovery & Application" },
       { num: "2", text: "Free Demo Session" },
@@ -119,47 +119,6 @@ const RoadmapItem = ({ phase, index }: { phase: any, index: number }) => {
           {phase.icon}
         </div>
       </div>
-
-      {/* 3. CONTENT CARD (Your styled version) */}
-      {/* <div className={`flex-1 w-full md:w-1/2 pl-24  md:pl-0 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}> */}
-        
-        {/* Applied your background color logic here */}
-        {/* <div className={`relative rounded-2xl p-6 border ${colors.border} shadow-lg hover:shadow-xl transition-all duration-300 group ${colors.light}`}>
-            
-            <div className={`absolute top-0 right-0 w-24 h-24 bg-white/40 rounded-bl-[80px] rounded-tr-2xl -z-0`}></div>
-
-            <div className="relative z-10"> */}
-            {/* PHASE TAG */}
-            {/* <span className={`inline-block px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider mb-3 ${colors.light} ${colors.text} bg-white/60`}>
-                {phase.phase}
-            </span> */}
-            
-            {/* TITLE */}
-            {/* <h4 className="text-[33px] font-semibold text-slate-900 mb-4 leading-tight font-sans">
-                {phase.title}
-            </h4> */}
-            
-            {/* STEPS */}
-            {/* <ul className="space-y-3">
-                {phase.steps.map((step: any, idx: number) => (
-                <li key={idx} className="flex items-center">
-                    <span className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white mr-3 ${colors.bg}`}>
-                    {step.num}
-                    </span>
-                    <span className="text-slate-700 text-[15px] font-semibold font-sans">
-                    {step.text}
-                    </span>
-                </li>
-                ))}
-            </ul>
-            </div>
-
-        </div>
-      </div>
-
-    </div>
-  );
-}; */}
       
       {/* 3. CONTENT CARD (Text Side) */}
       <div className={`w-full md:w-1/2 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Wrench, PenTool, TrendingUp, Lock } from 'lucide-react';
 
-// Import existing components
 import ProgramShowcase from './ProgramShowcase';
 import StudentWork from './StudentWork';
 import StudentPortfolios from './StudentPortfolios';
@@ -24,10 +23,9 @@ const CadPathway: React.FC = () => {
     } else if (tab === 'business') {
       setActivePathway('business');
     } else {
-      // Default to engineering if no tab specified or if tab=engineering
       setActivePathway('engineering');
     }
-  }, [location]); // Re-run whenever the URL changes
+  }, [location]); 
 
   return (
     <div className="pt-4 bg-brand-cream min-h-screen">

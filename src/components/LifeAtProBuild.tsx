@@ -1,6 +1,5 @@
 import React from 'react';
 
-// You can replace these with your local images later (e.g., "/images/culture1.jpg")
 const cultureImages = [
   "/images/image3.jpg",
   "/images/image4.jpg",
@@ -43,7 +42,6 @@ const LifeAtProBuild: React.FC = () => {
       {/* Scrolling Image Strip */}
       <div className="w-full">
         <div className="animate-scroll-culture">
-          {/* We map the array TWICE to create a perfect loop without gaps */}
           {[...cultureImages, ...cultureImages].map((img, index) => (
             <div 
               key={index} 

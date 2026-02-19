@@ -112,7 +112,6 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    // 'h-fit' ensures the card only takes up the space it needs
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200 flex flex-col hover:shadow-2xl transition-all duration-300 h-fit">
       
       {/* --- ALWAYS VISIBLE PART (Click to Toggle) --- */}
@@ -266,9 +265,6 @@ const ProgramShowcase: React.FC = () => {
           <p className="mt-4 text-lg text-slate-500">Choose the path that fits your career goals.</p>
         </div>
 
-        {/* FIX APPLIED HERE: 'items-start' 
-          This prevents the cards from stretching to match the height of the row.
-        */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           {programs.map((program) => (
             <ProgramCard key={program.id} program={program} />

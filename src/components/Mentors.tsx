@@ -10,19 +10,10 @@ const mentors = [
     image: "/images/mentors/Pranoti_Kulkarni.png",
     linkedin: "https://www.linkedin.com/in/pranoti-kulkarni-50533729a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
-  // {
-  //   name: "Emily Zhang",
-  //   role: "Automation & Robotics Lead",
-  //   company: "Siemens R&D",
-  //   bio: "Specializes in Python-based industrial automation. Expert in creating digital twins for large-scale assembly lines.",
-  //   image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png",
-  //   linkedin: "#"
-  // }
 ];
 
 const Mentors: React.FC = () => {
   return (
-    // 1. SECTION BACKGROUND: Dark Radial Gradient
     <section id="mentors" className="py-24 bg-brand-cream from-slate-800 via-slate-900 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -42,16 +33,11 @@ const Mentors: React.FC = () => {
           {mentors.map((mentor, index) => (
             <div
               key={index}
-              // 2. CARD STYLE: Dark background (slate-800), Dark border
               className="bg-brand-cream rounded-3xl p-8 flex flex-col items-center text-center border border-slate-700 hover:shadow-blue-900/20 hover:shadow-2xl transition-all duration-300 group"
             >
               
               {/* --- IMAGE CONTAINER (Original Style) --- */}
               <div className="relative mb-6">
-                {/*
-                   border-yellow-500 -> Gold Ring
-                   bg-slate-800 -> Matches the dark card background
-                */}
                 <div className="w-48 h-48 rounded-full border-[6px] border-yellow-500 p-1 bg-brand-cream shadow-xl overflow-hidden group-hover:scale-105 transition-transform duration-500">
                   <img
                     src={mentor.image}

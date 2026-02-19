@@ -10,7 +10,7 @@ const PathwaysPreview: React.FC = () => {
       id: 'engineering',
       title: 'Engineering Pathway',
       description: 'Master the technical core. From CAD modeling to automation scripts.',
-      icon: <Wrench className="w-full h-full text-brand-yellow/20" />, // Made icons subtler
+      icon: <Wrench className="w-full h-full text-brand-yellow/20" />, 
       color: 'bg-brand-yellow',
       cardBg: 'bg-yellow-50',
       points: ['FreeCAD & Parametric Modeling', 'Python Automation', 'Finite Element Analysis (FEA)']
@@ -41,7 +41,6 @@ const PathwaysPreview: React.FC = () => {
   };
 
   return (
-    // 1. UPDATED SECTION BACKGROUND (Cream)
     <section className="py-24 bg-brand-cream text-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -56,7 +55,6 @@ const PathwaysPreview: React.FC = () => {
           {pathways.map((path) => (
             <div
               key={path.id}
-              // 2. UPDATED CARD STYLE (White bg, light border)
               className={`${path.cardBg} rounded-3xl p-8 shadow-xl border border-slate-200 relative overflow-hidden group hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col h-full`}
             >
               
@@ -68,9 +66,7 @@ const PathwaysPreview: React.FC = () => {
               {/* Title & Description */}
               <div className="relative z-10 mb-6">
 
-                {/* Changed text-white to text-slate-900 */}
                 <h4 className="text-2xl font-semibold text-slate-900 mb-3">{path.title}</h4>
-                {/* Changed text-slate-400 to text-slate-600 */}
                 <p className="text-slate-600 leading-relaxed text-md">
                   {path.description}
                 </p>
@@ -80,7 +76,6 @@ const PathwaysPreview: React.FC = () => {
               <div className="relative z-10 mb-8 flex-grow">
                 <ul className="space-y-3">
                   {path.points.map((point, i) => (
-                    // Changed text-slate-300 to text-slate-700
                     <li key={i} className="flex items-start text-sm font-medium text-slate-700">
                       <CheckCircle2 className={`w-4 h-4 mr-2 mt-0.5 flex-shrink-0 ${path.color.replace('bg-', 'text-')}`} />
                       {point}
